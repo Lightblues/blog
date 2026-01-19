@@ -1,0 +1,368 @@
+<!DOCTYPE html><html lang="zh" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>赛博漫谈 | 媒介视角下的元宇宙冷思考 | Easonshi's Space</title><meta name="author" content="Easonshi"><meta name="copyright" content="Easonshi"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="「元宇宙」概念早已烂熟于大街小巷, 然而关于它究竟是什么, 却少有人真正说得清; 作为一个八字还没一撇的未来幻想, 可以说一千个人里就有一千种的 Metaverse. 那么为何要再去谈它? 首先, 自然是因其火热, 因其模糊性. 然而, 激发我兴趣的更在于公众讨论这一现象本身. 正如一档播客中..."><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "赛博漫谈 | 媒介视角下的元宇宙冷思考",
+  "url": "https://lightblues.github.io/blog/posts/70447ef0/",
+  "image": "https://cloud.easonsi.site/img/EVA/eva-00003.jpg",
+  "datePublished": "2021-12-15T04:00:36.000Z",
+  "dateModified": "2026-01-19T08:24:05.758Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Easonshi",
+      "url": "https://lightblues.github.io/blog"
+    }
+  ]
+}</script><link rel="shortcut icon" href="https://cloud.easonsi.site/img/_meta/favicon.ico"><link rel="canonical" href="https://lightblues.github.io/blog/posts/70447ef0/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin=""/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="baidu-site-verification" content="code-5Y8by4jIW3"/><link rel="manifest" href="/blog/null"/><link rel="apple-touch-icon" sizes="180x180" href="/blog/pwa/apple-touch-icon.png"/><link rel="icon" type="image/png" sizes="32x32" href="/blog/pwa/32.png"/><link rel="icon" type="image/png" sizes="16x16" href="/blog/pwa/16.png"/><link rel="mask-icon" href="/blog/pwa/safari-pinned-tab.svg" color="#5bbad5"/><link rel="stylesheet" href="/blog/css/index.css?v=5.5.4-b1"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          const mediaQueryDark = window.matchMedia('(prefers-color-scheme: dark)')
+          const mediaQueryLight = window.matchMedia('(prefers-color-scheme: light)')
+
+          if (theme === undefined) {
+            if (mediaQueryLight.matches) activateLightMode()
+            else if (mediaQueryDark.matches) activateDarkMode()
+            else {
+              const hour = new Date().getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            mediaQueryDark.addEventListener('change', () => {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else {
+            theme === 'light' ? activateLightMode() : activateDarkMode()
+          }
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?07cc68228b5c4f4b4d49b36c1d3656c0";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+btf.addGlobalFn('pjaxComplete', () => {
+  _hmt.push(['_trackPageview',window.location.pathname])
+}, 'baidu_analytics')
+</script><script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-155100419-1"></script><script>window.dataLayer = window.dataLayer || []
+function gtag(){dataLayer.push(arguments)}
+gtag('js', new Date())
+gtag('config', 'UA-155100419-1')
+btf.addGlobalFn('pjaxComplete', () => {
+  gtag('config', 'UA-155100419-1', {'page_path': window.location.pathname})
+}, 'google_analytics')
+</script><script>const GLOBAL_CONFIG = {
+  root: '/blog/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: 'Copy Successful',
+    error: 'Copy Failed',
+    noSupport: 'Browser Not Supported'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just now',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.12.0/dist/infinitegrid.min.js',
+    buttonText: 'Load More'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: true,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '赛博漫谈 | 媒介视角下的元宇宙冷思考',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/blog/atom.xml" title="Easonshi's Space" type="application/atom+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud.easonsi.site/img/_meta/avatar.jpg" onerror="this.onerror=null;this.src='https://cloud.easonsi.site/img/_meta/404_image.png'" alt="avatar"/></div><div class="site-data text-center"><a href="/blog/archives/"><div class="headline">Articles</div><div class="length-num">16</div></a><a href="/blog/tags/"><div class="headline">Tags</div><div class="length-num">17</div></a><a href="/blog/categories/"><div class="headline">Categories</div><div class="length-num">2</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://notes.easonsi.site/"><i class="fa-fw fas fa-sticky-note"></i><span> Notes</span></a></div><div class="menus_item"><a class="site-page" href="/blog/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/blog/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/blog/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/blog/gallery/"><i class="fa-fw fas fa-images"></i><span> Galleries</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-heart"></i><span> About</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/blog/about/"><i class="fa-fw fas fa-address-card"></i><span> About</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(https://cloud.easonsi.site/img/EVA/eva-00003.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/blog/"><span class="site-name">Easonshi's Space</span></a><a class="nav-page-title" href="/blog/"><span class="site-name">赛博漫谈 | 媒介视角下的元宇宙冷思考</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  Back to Home</span></span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://notes.easonsi.site/"><i class="fa-fw fas fa-sticky-note"></i><span> Notes</span></a></div><div class="menus_item"><a class="site-page" href="/blog/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/blog/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/blog/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/blog/gallery/"><i class="fa-fw fas fa-images"></i><span> Galleries</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-heart"></i><span> About</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/blog/about/"><i class="fa-fw fas fa-address-card"></i><span> About</span></a></li></ul></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">赛博漫谈 | 媒介视角下的元宇宙冷思考</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2021-12-15T04:00:36.000Z" title="Created 2021-12-15 12:00:36">2021-12-15</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2026-01-19T08:24:05.758Z" title="Updated 2026-01-19 16:24:05">2026-01-19</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/blog/categories/Meta/">Meta</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">Word Count:</span><span class="word-count">6.9k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">Reading Time:</span><span>20mins</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post Views:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><p>「元宇宙」概念早已烂熟于大街小巷, 然而关于它究竟是什么, 却少有人真正说得清; 作为一个八字还没一撇的未来幻想, 可以说一千个人里就有一千种的 Metaverse. 那么为何要再去谈它? 首先, 自然是因其火热, 因其模糊性. 然而, 激发我兴趣的更在于公众讨论这一现象本身.</p>
+<p>正如一档播客中所言, 细想互联网时代 (或者更准确地说, 移动互联网时代) 以来, 我们很少再有全民对于未来世界进行的公众讨论了. 反思现在的社会生活, 我们几乎不得不承认, 当前世界的生活样态是完全围绕互联网展开的. 在互联网作为甚至比水电更为重要的基础设施的当下, 我们似乎无法想象一个没有「网」的世界; 而伴随着对于不久远过去的记忆的丧失, 我们似乎也丧失对于未来世界的想象, 历史终结于互联网.</p>
+<p>从这一点来看, 「元宇宙」这一概念破圈成为街头巷尾热议的话题, 激发了普罗大众对于未来的广泛讨论和想象, 这一文化现象本身就值得讨论.</p>
+<p>回望互联网刚刚兴起的那段时间, 那时候瀛海威时空广告词中用的还是「信息高速公路」, 那时候的人们形容访问互联网的行为是「网上冲浪」, 从这些埋进历史的故纸堆的词汇当中, 我们还是能够瞥见那时的人们对于方兴的互联网有着多少的想象. 关于 Meatverse, 不论说是未来科技前夜, 还是说资本炒作下的泡沫, 至少从对其的广泛讨论这一现象来看, 我觉得倒和那个时候有某种类似之处.</p>
+<p>因此, 讨论这一话题是成立的. 那么, 如何谈起? 未来尚未到来, 那么只好泛泛而谈; 结合自身兴趣, 以下就从元宇宙的概念&#x2F;定义出发, 结合麦克卢汉的游戏延伸理论, 来谈谈元宇宙作为一种媒介对于个体和社会的意义和影响, 以及我们当如何看待和理解元宇宙.</p>
+<h2 id="元宇宙何谓"><a href="#元宇宙何谓" class="headerlink" title="元宇宙何谓"></a>元宇宙何谓</h2><p>如前所述, 元宇宙的一切还处于混沌, 由于技术和概念上的模糊性, 由于风口浪尖众说纷纭; 即然对于它的精准描述几乎不可能, 以下就简要从基础技术、个体经验、概念发展史三个视角来看它的不同面向.</p>
+<blockquote>
+<p>The metaverse is a hypothesized iteration of the Internet, supporting persistent online 3-D virtual environments through conventional personal computing, as well as virtual and augmented reality headsets.</p>
+<p>一个持久化和去中心化的在线三维虚拟环境, 可以通过虚拟现实眼镜、增强现实眼镜、手机、个人电脑和电子游戏机等进入人造的虚拟世界. – wiki</p>
+</blockquote>
+<p>以上 wiki 的定义出于技术视角. 例如, 这里的一个重点是 3-D virtual environments, 所以从交互形式上就有别于当今的互联网. 定义中还有「持久化」「去中心化」等关键词, 这些就提出了大规模实时在线、分布式计算推流、去中心化网络等技术层面的要求. 当然, 这里提到的仅仅是一小部分, 美国一个很早开始就关注元宇宙的风险投资人 Matthew Ball 在他的网站上给出了更为全面的 <a target="_blank" rel="noopener" href="https://www.matthewball.vc/the-metaverse-primer">描述</a>, 有兴趣可以去看看.</p>
+<p>除了技术层面, 从个体经验出发来看元宇宙无疑是更为直观的. 还是回到 1992年, 来看看尼尔·斯蒂芬森在小说《雪崩》中对于 Metaverse 最初的构想:</p>
+<blockquote>
+<p>只要带上耳机和目镜, 找到一个终端, 就可以通过连接进入由计算机模拟的另一个三维现实. 每个人, 都可以在这个与真实世界平行的虚拟空间中拥有自己的分身. </p>
+<p>这条大街与真实世界唯一的差别就是, 它并不真正存在. 它只是一份电脑绘图协议, 写在一张纸上, 放在某个地方. 大街, 连同这些东西, 没有一样被真正赋予物质形态. 更确切地说, 它们不过是一些软件, 通过遍及全球的光纤网络供大众使用. 当阿弘进入超元域, 纵览大街, 当他看着楼宇和电子标志牌延伸到黑暗之中, 消失在星球弯曲的地平线之外, 他实际上正盯着一幕幕电脑图形表象, 即一个个用户界面, 出自各大公司设计的无数各不相同的软件. </p>
+</blockquote>
+<p>耳机和目镜是交互形式, 这一点和现今的 RV设备或游戏舱有类似之处; avatar 的概念有社交互动属性, 其实也和 MMO 游戏类似. 比较有特点的, 或许就是地图的玩家&#x2F;用户自建属性, 并且虚拟世界是构建在去中心化的协议之上的, 而非集权于某家游戏公司. 综合来看, 这里的元宇宙想象有点类似 VR技术、MMO游戏设定、去中心化协议等的融合, 只不过在交互方式、拟真水平、自由程度上更高罢了. 直观来看, 其初级形态可以参考现在的一些电子或 VR游戏, 终极形态可以想象《黑客帝国》《攻壳机动队》等.</p>
+<p>当然, 稍微看点科幻作品、动漫, 乃至网络小说, 对于这样的描述就不会感到新奇. 元宇宙概念的突然兴起, 自然是和资本炒作以及互联网巨头的概念宣传有关. 因此, 下面就概览这一概念的发展&#x2F;泡沫史 (from 百科):</p>
+<ul>
+<li>2021年初, Soul App 在行业内首次提出构建“社交元宇宙”；</li>
+<li>3月, 被称为元宇宙第一股的罗布乐思（Roblox）正式在纽约证券交易所上市；</li>
+<li>5月, 微软首席执行官萨蒂亚·纳德拉表示公司正在努力打造一个“企业元宇宙”；</li>
+<li>8月, 英伟达宣布推出全球首个为元宇宙建立提供基础的模拟和协作平台 Omniverse；</li>
+<li>8月, 字节跳动斥巨资收购VR创业公司Pico；</li>
+<li>10月, 美国社交媒体巨头 Facebook 宣布更名为 Meta；</li>
+<li>11月, 虚拟世界平台 Decentraland 公司发布消息, 巴巴多斯将在元宇宙设立全球首个大使馆, 暂定2022年1月启用. (巴巴多斯是加勒比海上的一个岛国)</li>
+</ul>
+<p>社交、游戏、企业、技术平台, 无外乎这些. 就不去翻更古早的旧账了, 这里破圈的重要节点, 大概 Facebook 改名事件 —— 作为一家将近 30亿月活的社交媒体公司, 其任何动向自然会引发热议, 更不用提改头换面了 (脸都不要了). (当然, 机缘巧合之下, 更早进入我视野的是 Nvidia 的 Omniverse; 作为科技圈外围人士, 技术相关的新闻自然是更戳 xp.)</p>
+<p>尽管无法切实描绘元宇宙的一个图景, 从相关技术、相关公司的宣传运营, 乃至小说电影作品中的想象中, 我们还是能够瞥见一枝半叶. 而以上的几个视角, 或多或少都和游戏有一定的关联; 于此同时, 其核心的 3D交互数字社会又有着强烈的媒介特性. 因此, 以下就围绕麦克卢汉的游戏媒介理论, 先对该理论进行简单介绍, 再从媒介视角来对元宇宙进行一些探讨.</p>
+<h2 id="游戏作为媒介-游戏-——-人的延伸"><a href="#游戏作为媒介-游戏-——-人的延伸" class="headerlink" title="游戏作为媒介 | 游戏 —— 人的延伸"></a>游戏作为媒介 | 游戏 —— 人的延伸</h2><p>这里简要介绍麦克卢汉《理解媒介》一书中的游戏媒介理论, 并补充我的一些看法. 在书中, 他认为游戏是「人的延伸」, 这和他的核心论述「媒介是人的延伸」相一致. 在麦氏的概念中, 媒介包括了丰富的内涵, 不仅是传播信息的物理介质, 还包括信息乃至人的行为本身. 游戏作为很多人共同参与的行为, 自然就可以理解为一种媒介; 由此出发, 就可以自然地将他的媒介延伸理论应用到游戏行为上.</p>
+<p>简言之, 游戏作为「人的延伸」, 在个人层面上包括了三层意义: 首先, 媒介是人的感官的延伸, 帮助人们扩大信息传播活动; 而随着感官的延伸, 人的思想和情感得以延伸; 最后, 感官和思想情感的延伸进一步改变了人的思维、情感和生活方式, 改变了媒介环境和客观环境在人们心目中的比例.</p>
+<h3 id="游戏是感官的延伸"><a href="#游戏是感官的延伸" class="headerlink" title="游戏是感官的延伸"></a>游戏是感官的延伸</h3><p>任何媒介都不外乎是人的感觉和感官的扩展或延伸：文字和印刷媒介是人的视觉能力的延伸, 广播是人的听觉能力的延伸, 电视则是人的视觉、听觉能力的综合延伸. 通过这样的一些媒介, 人能够超脱超过物理距离的限制进行信息交换, 构建连接.</p>
+<p>所谓感官延伸, 我认为不仅是单纯物理上的知觉延伸, 更是整体性社会的虚拟化构建. 正如 Roblox 的 CEO Dave Baszucki 所说, 「元宇宙至少包括以下要素：身份、朋友、沉浸感、低延迟、多元化、随地、经济系统和文明」; 可以看到, 这里元宇宙定义首先蕴含了对于现实世界的模拟, 人们在其中延续了现实世界中的社交关系、身份认证, 乃至构成经济和文化. 也就是说, 元宇宙世界是对于现实生活的延续, 个体进入这个数字世界的同时, 与这一世界的其他人构成了连接和信息交换的能力&#x2F;权力.</p>
+<p>现在的 VR 技术可以在感官上可以带来很高的拟真性, 然而它并没有满足我们对于「元宇宙」的想象, 我认为一个原因就在于, 现在的 VR游戏无法构成上述意义的数字世界, 在提供感官刺激的同时没有带来感官上的「延伸」, 也即, 人与人之间的连接.</p>
+<h3 id="游戏是人们的思想、情感、欲望、想象的延伸"><a href="#游戏是人们的思想、情感、欲望、想象的延伸" class="headerlink" title="游戏是人们的思想、情感、欲望、想象的延伸"></a>游戏是人们的思想、情感、欲望、想象的延伸</h3><p>游戏很重要的一个特点在于「虚拟性」. 荷兰语言学家和历史学家赫伊津哈在《游戏的人 —— 文化的游戏要素研究》中提到, 「游戏并非“平常的”或“真实的”生活, 它步出了“真实的”生活, 进入一个暂时的活动领域, 带有它自己的倾向」. 这本书出版于 1940年代, 显然, 这里说的游戏是现实生活中的传统游戏; 然而这一论断放在如今的电子游戏上, 无疑更为自然和贴切.</p>
+<p>不单游戏如此, 传统媒介中的很多非现实题材作品, 比如说小说、电影, 它们也是提供了一个虚拟的世界, 也致力于给人以虚拟化的感受; 只不过相较于这些传统的媒介, 视听语言的电子游戏在这一方面无疑带有天然的优势, 而这里的元宇宙, 其所能给人带来的虚拟体验显然是更为强烈的.</p>
+<p>尽管是虚拟性的, 但着并不妨碍我们在其中投注私人的情感和欲望. 实际上, 或许正是游戏的虚拟性给我们的情感投入提供了相较现实生活更为简便的通道. 这一点, 从传统的文艺作品中即可见一斑; 正因为与现实世界的差异, 才能更方便地代入私人的偏好和想象, 而人们也通过这种虚拟的情感投注获得某种程度的满足.</p>
+<p>因此, 我们说「游戏化」, 必然是要参与一个混杂了现实与想象的于此同时又与现实有一定区隔的环境&#x2F;空间, 这一空间可能是语言文字所虚构的, 也可能是游戏或虚拟现实技术为我们创设的; 我们在参与游戏的过程中获得了情感释放和欲望满足.</p>
+<p>在 2006年末和 2007年初有一款非常热的游戏《第二人生》, 算是对于斯蒂芬森《雪崩》中所构想的 Metaverse 的初步实践. 当然, 《第二人生》中所提供的「未来」还是非常原始的, 它从画面上来说拟真程度不高, 也不是 3D的. 然而, 或许出乎我们的意料, 这个游戏现在还活着并且维持在 80万左右的月活用户. 参见 <a target="_blank" rel="noopener" href="https://www.theatlantic.com/magazine/archive/2017/12/second-life-leslie-jamison/544149/">这里</a> 的一篇报道, 那些现在还在坚守的游戏玩家, 或者说「居民」, 他们在其中投注了太多了时间、精力、情感和欲望, 他们在这一虚拟世界中社交、经营、交易、生活, 几乎已经无法离开这个游戏&#x2F;世界. 仅从这一点即可见, 游戏在作为我们感官延伸的同时, 也承担着我们情感延伸的载体.</p>
+<p>总而言之, 媒介是我们感官的延伸, 扩展人获取信息的能力, 参与构建人际连接; 而在这一过程中, 自然也包含了人们的思想、情感、欲望、想象. 可以想象, 若是未来在一个高度拟真的、高度自由的元宇宙中生活, 身处其中的我们一定会对这一世界产生更强的情感连接.</p>
+<h3 id="游戏塑造认知"><a href="#游戏塑造认知" class="headerlink" title="游戏塑造认知"></a>游戏塑造认知</h3><p>媒介所带来的感官、情感、想象的延伸, 反过来会改变人的交互方式, 改变媒介环境, 乃至塑造我们的认知.</p>
+<p>还是麦克卢汉那句著名的「媒介即信息」, 媒介形态本身即带有其天然属性, 因此他认为不同媒介所能承载的内容从本质上来讲是存在差异的. 尼尔·波兹曼在 1985年出版《娱乐至死》中也提到, 「为我们提供纯粹的娱乐是电视最大的好处, 它最糟糕的用处是它企图涉足严肃的话语模式 —— 新闻、政治、科学、教育、商业和宗教 —— 然后给它们换上娱乐的包装」.</p>
+<p>我们知道, 波兹曼是明确反对电视企图占据严肃讨论空间所造成的万物娱乐化的, 图像媒介和文字媒介所传递的信息是截然不同的, 图像文化侵占生活中所有讨论空间, 必然会影响人的言说、思维方式, 乃至影响整个社会的经济和文化形态. 如今, 尼尔·波兹曼所警惕的电视已经无法吸引很多人的注意力; 如果在他那个年代, 他所担忧的是电视为代表的图像化媒介对于文字媒介的侵占, 那么现在, 影响和塑造我们的媒介无疑更为丰富和直接了, 它是移动设备、社交网络, 是购物软件、短视频应用, 是电子游戏、网红博主.</p>
+<p>10年代之前, 可以听到家长把游戏称为「电子鸦片」「电子海洛因」, 如今好像少有人再提了 (心智健全的); 讽刺的是, 玩游戏的那些孩子或许进入了大学成为了社畜, 而当年视电子游戏为洪水猛兽的家长们很多却成了网络团购和短视频最忠实的用户&#x2F;消费者. 时代的车轮无可遏制, 媒介形态也在不断更迭, 不难设想抵制游戏的和消费短视频的人在认知层面上一定发生了很大的转变.</p>
+<p>无意对于媒介分个高低, 这里想要强调的只是, 我们所消费的媒介一定会在某种程度上塑造我们的认识, 乃至于影响社会形态和社会共识; 这一点我们从现今的互联网上已经得到了充分的验证, 并且电子游戏的发展也必然会产生很多深远的影响; 这里我们要提的元宇宙, 如果真能像未来学家们所宣扬的一样到来, 那么一定会从根本上改变我们的认知, 改变我们的行为模型.</p>
+<h3 id="游戏是社会生活的延伸"><a href="#游戏是社会生活的延伸" class="headerlink" title="游戏是社会生活的延伸"></a>游戏是社会生活的延伸</h3><p>以上分三点介绍了游戏作为一种媒介作为「人的延伸」的意义, 其扩展了人的感官, 承载了人思想情感欲望想象的投注, 并在潜移默化中所造我们的认知. 其实从上面的论述中也可以看出来这一过程必然是社会化的. 这里就简单强调一下, 游戏作为一种媒介一定是带有社会属性的,而作为未来畅想的元宇宙更是如此.</p>
+<p>这里给一个旧时代的例子. 约翰·W·道尔在《拥抱战败 —— 第二次世界大战后的日本》中提到, 1946年, 美国占领军控制下的战后日本, 在城市里的儿童们之间, 流行着三种游戏：“黑市游戏”、“潘潘游戏”和“民主游戏”, 内容分别是为模仿黑市交易、假扮妓女拉客以及模仿左翼示威活动. 孩童是社会的一面纯真&#x2F;残酷的镜子, 而流行在孩童之间的游戏, 就表达了孩童的观察、想象和欲望. 从这些儿童游戏当中, 我们可以看到当时日本社会的经济和文化状态, 看到日本对于美国人和美国统治的复杂态度.</p>
+<p>旧时代的孩童游戏如此, 现今的 (严肃) 电子游戏如此, 而未来的元宇宙作为游戏更是如此. 我们可以看到, 尽管游戏是虚拟性的, 但任何的虚拟不会是纯然空中楼阁, 必然能在某一定程度上找到现实的投射. 用麦克卢汉《理解媒介》中的一句话作结: 「游戏是对日常压力的大众反应的延伸, 因而成为忠实反映文化的模式. 它们把全民的行为和反应熔于一炉, 使之成为一个动态的形象.」</p>
+<h2 id="元宇宙作为游戏-游戏化的社会"><a href="#元宇宙作为游戏-游戏化的社会" class="headerlink" title="元宇宙作为游戏 | 游戏化的社会"></a>元宇宙作为游戏 | 游戏化的社会</h2><p>以上借助媒介延伸理论探讨了游戏作为一种媒介, 其对于个体和社会的意义和影响, 并在与游戏的比较中考察了元宇宙和游戏相类似的一些特质. 然后元宇宙是 (电子)游戏吗? 如何看待其潜在的成瘾性危险? 现在的我们又当如何看待它?</p>
+<h3 id="元宇宙-不-是游戏"><a href="#元宇宙-不-是游戏" class="headerlink" title="元宇宙(不)是游戏"></a>元宇宙(不)是游戏</h3><p>首先, 我认为至少短期内元宇宙的实现方式是游戏. 这里的「游戏」, 还不是上面论述中广义的游戏, 而是狭义上如今的电子游戏. 尽管很多投资人都宣扬着「元宇宙不是游戏」, 但悖谬的是他们所能举出的例子多能被现在的电子游戏所包含. 因此, 更为准确的说法, 应该是「元宇宙不只是电子游戏」.</p>
+<p>不止如此, 几度起落的虚拟现实 (VR) 技术, 其目前主要的应用场景也是电子游戏. 我觉得这是非常合理的, 如一些历史学家所言, 人类区分于其他物种的一项能力就在于拥有想象&#x2F;虚构的能力, 也因此我们的很大一部分欲望都是需要在虚构中得到满足的. 相较于小说、音乐等相对间接的媒介, 直接实时交互的, 图像和声音的电子游戏是更为直观的, 能够带来更高的感官刺激的虚拟媒介. 因此, 可以更直接简单地满足人的这一需求的媒介理所当然会吸引到更多人, 也必然会是未来发展的趋势. </p>
+<p>那些投资人宣扬游戏不是电子游戏大概可以圈到更多注目, 然而实际上, 一项技术在电子游戏的发展过程中成熟完全不是一个问题或污点; 一个直接的例子或许是显卡技术的发展 (参见下一节). 目前的元宇宙构想远远没有成熟, 而相关的技术必然会围绕着电子游戏的发展而进步, 不妨拭目以待.</p>
+<h3 id="社会生活的游戏化"><a href="#社会生活的游戏化" class="headerlink" title="社会生活的游戏化"></a>社会生活的游戏化</h3><p>上面讲的是狭义上的电子游戏, 而从更广泛的定义来看, 我觉得「游戏化」是一个非常普遍的社会现象. 技术的进步给我们带来了更多对于现实世界拟真、建模的能力, 并且相较于原本的物理世界, 人们更乐于幻想这样一个被数字化、中介化的社会. 这一过程其实就是广义上的游戏化过程.</p>
+<p>一个比较明显的例子就是微博上的明星打榜现象. 我们喜欢一个明星不再是单纯去看 TA 的作品, 而需要通过实际的亲身行为来提升 TA 的知名度. 我们知道游戏的一些重要特性就是其明确的规则, 高度的建模能力, 以及实时、清晰的反馈; 在这里, 实时更新的排行榜, 数字化的明星指数不就是提供了这些吗? 打榜行为是数字化、娱乐化、游戏化了的人的行为. 此外现在的饭圈文化, 也把粉丝和明星之间的关系, 从原本明星到粉丝的单向传递, 转化为了双向的养成关系. 偶像不再如昔日巨星靠个人魅力一呼百应, 而更多是小心翼翼回应了粉丝群众的某些期待; 而粉丝也从虚拟的对于偶像的养成、陪伴, 或者说游戏过程中得到的高度的正向反馈, 得到了虚拟的满足.</p>
+<p>再举个例子, 拿元宇宙学家经常举的游戏《堡垒之夜》来说, 官方放出的一些彩蛋, 例如致敬《2001太空漫游》的一个黑色石碑, 一个突然出现欲将发射的火箭, 这些突发性的事件都足够引起全体游戏玩家的狂欢; 这种狂欢不是一个人的而是所有玩家所共同参与的. 这里的狂欢过程取消了原本的固定游戏规则, 而将玩家吸引到了一场新的集体无意识游戏中去 —— 这和现实社会中的某些公众议题何其相似 —— 实际上, 现在对于「元宇宙」的普遍讨论本身何尝不是一场游戏.</p>
+<p>更广泛地设想, 我们来看社交网络上的建构、朋友圈的经营、微博上的论战, 它们和传统的现实接触相比, 无不增加了更强的互动性、反馈性、娱乐性, 都可以说是「游戏化」的体验.</p>
+<h3 id="何以元宇宙"><a href="#何以元宇宙" class="headerlink" title="何以元宇宙"></a>何以元宇宙</h3><p>我们说元宇宙的实现形式就是电子游戏, 并且认为现如今的很多社会生活都是被游戏化了的, 听起来似乎有点危言耸听. 那么最后, 就在从媒介的角度来谈谈我们当如何对待元宇宙.</p>
+<p>首先, 我们不必过程恐慌. 现在对于它的描绘很容易让我们联想到一些科幻作品中的世界, 然而, 正如复旦中文系教授严锋所言, 科幻作品更多是会对于未来世界唱衰的 —— 它们在提供给我们未来世界想象的同时, 也在这个世界危险的边缘架构了一个刺激的故事. 一方面, 请放心, 技术上还有很长一段路要走, 我们还远没有到要去选择红药丸还是蓝药丸的地步. 另一方面, 也请放心, 现实世界没有那么脆弱, 它不会那么轻易就退位, 毕竟我们还是以物理的方式存在着.</p>
+<p>因此, 与其无目的地去跟着科幻作品的视角去想象元宇宙世界, 不如更为切实地, 把元宇宙看作是一项新的技术, 一种新媒介. 不如去思考, 这种媒介相较于传统媒介或传统电子游戏有怎样的特性, 社会关系如何在这一世界中构建.</p>
+<p>不过分期待也不极端抵制, 一个新媒介&#x2F;技术产生的同时必然会有很多的热望与担忧, 然而到最后我们似乎总能找到一个合适的方式与其共处, 融汇到我们的日常生活中不咸也不淡. 就拿「成瘾」或者「沉迷」这一话题来说, 中国政法大学的教授孟庆延说「沉迷是一个人的普遍状态」, 他认为刻意去对抗人的基本需求几乎是不可能, 然而, 在一个健全的多元化的自由的社会中, 我们必然可以在其他途径找到各种机制去对抗单一媒体所带来的沉迷.</p>
+<p>确实, 每天打十个小时的游戏也会让人厌倦, 连续看五六部电影中的日日夜夜也止不了我们想在现实的阳光下散散步的心情. 不同的媒介有着其独特的性质, 一定能够满足我们某个特定方面的需求, 正如三维动画无法取代乃至二维作画的魅力, 电子阅读器无法替代实体书籍带来的物理经验. 我们期待一个满足我们所有需求的媒介是不现实的, 游戏不能, 我想元宇宙大概也不能. 从更本上来说, 这根植于人内心的多样性, 生物的本能让我们一定会厌倦单调重复的媒介, 吃着山珍海味总想尝尝低分辨率的小米粥.</p>
+<p>麦克卢汉对于游戏是乐观的. 他认为, 「游戏是我们心灵生活的戏剧模式, 给各种具体的紧张情绪提供发泄的机会.」「游戏是像迪斯尼乐园的一种人为的天堂, 或者是一种乌托邦似的幻景, 我们借助这种幻景去阐释和补足日常生活的意义.」 游戏化的各种经验均如此, 不特电子游戏或虚拟现实.</p>
+<p>那么, 就以他的这段话作结:</p>
+<blockquote>
+<p>难道我们喜欢的游戏, 不正是给自己提供了一种超乎社会机器垄断暴政的一种解脱吗? 一句话, 亚里斯多德的戏剧思想——既是模拟表演又是持续压力的解脱——不正是完美地解释了各种游戏、舞蹈和欢乐吗? 嬉耍和游戏要受人欢迎, 就必须传达日常生活的回声.</p>
+</blockquote>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>Author: </span><span class="post-copyright-info"><a href="https://lightblues.github.io/blog">Easonshi</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>Link: </span><span class="post-copyright-info"><a href="https://lightblues.github.io/blog/posts/70447ef0/">https://lightblues.github.io/blog/posts/70447ef0/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>Copyright Notice: </span><span class="post-copyright-info">All articles on this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless otherwise stated.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/blog/tags/%E7%BD%91%E7%BB%9C/">网络</a><a class="post-meta__tags" href="/blog/tags/%E6%BC%AB%E6%B8%B8/">漫游</a><a class="post-meta__tags" href="/blog/tags/%E5%AA%92%E4%BB%8B/">媒介</a><a class="post-meta__tags" href="/blog/tags/%E5%85%83%E5%AE%87%E5%AE%99/">元宇宙</a></div><div class="post-share"><div class="social-share" data-image="https://cloud.easonsi.site/img/EVA/eva-00003.jpg" data-sites="facebook,x,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related" href="/blog/posts/e8dd01b4/" title="十光 | 新隅"><img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud.easonsi.site/img/GhostBlade-WLOP/ghost-blade-00012.jpg" onerror="onerror=null;src='https://cloud.easonsi.site/img/_meta/404_image.png'" alt="cover of previous post"><div class="info"><div class="info-1"><div class="info-item-1">Previous</div><div class="info-item-2">十光 | 新隅</div></div><div class="info-2"><div class="info-item-1"> 总之，重点在于不要错失良机，良机是只好机会，你懂吗？良机这种东西很难掌握，你必须要掌握那个良机不可。否则的话就再也没有机会。—— 《四叠半神话大系》  新隅小镇直突突挂在柏油路上, 东西约二里, 南北数百步; 光溜溜的黑体招牌吊在统一的蓝色水平木栏, 直陈店内的功用; 小镇无名, 为着故事的进行, 不妨称之「新隅」. 小津生、长于此, 走路, 从东到西, 从西到东. 平淡如水的生活, 用脚步度量地球母亲的脸颊, 家在一头, 学校在另一头, 踱步一趟大概一千五百多步, 数不了几分钟, 便是尽头, 没有标志, 人气断然止住了. 最多的大概是食品店, 理发店, 烟酒, 五金、装潢、水电, 对了, 还有小小的诊所和公安局. 菜市场、超市、银行、邮递局, 半现代的文明还是蔓延到了小镇. 在远处, 小学, 寥寥的乡镇企业, 尽头. 所以虽小, 却也是五脏俱全, 生老病死, 婚丧酒宴, 来去也梦一场. 对了, 不能少的有麻将馆, 无标牌, 窄窄门栏幽幽通向二层, 烟雾缭绕. 麻将、棋牌, 小津怀疑这是传统社会仅有的智力活动. 或紧张, 或松弛, 牌场是少数有着明晰规则的地方. 就像这些幽幽的...</div></div></div></a><a class="pagination-related" href="/blog/posts/8cedf62b/" title="赛博漫谈 | What a wonderful world"><img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud.easonsi.site/img/Ukiyo-e/ukiyo-e-00010.jpg" onerror="onerror=null;src='https://cloud.easonsi.site/img/_meta/404_image.png'" alt="cover of next post"><div class="info text-right"><div class="info-1"><div class="info-item-1">Next</div><div class="info-item-2">赛博漫谈 | What a wonderful world</div></div><div class="info-2"><div class="info-item-1"> 您那小小的歌唱着的鸟儿，即将飞向远方了。夜莺请一直往南走吧，到暖和的地方去生活。——《扬名立万》  于是今年大概是所谓「播客元年」, 即使每一年是太多事物的元年也见证了多少泡沫的破碎; 但当看到网易云和QQ音乐不惜在底部栏新增一个「播客」页面, 终于意识到播客成了互联网流量巨头新的宠儿.  实际上, 播客这一形式早已不新鲜, 不鸟万先生的《IT公论》开播自2013年11月, 而 Apple Podcast 从 iTunes 独立出来则是 2012年, 更不用提英文世界中的媒介尝试和发展历史.  那么何为播客, 为何又要谈播客? 播客何为Wiki 告诉我, 播客 「是一种数字媒体，指一系列的音频、视频、在线电台或文字以列表形式经互联网发布，听众可下载或串流当中的文件以欣赏」「播客创作者将音频或视频上传至RSS或在线播客平台，听众或观众则通过软件获取节目更新」.  播客为何? 数字音频, 支持下载或者流播, 从媒介上看几乎和音乐或脱口秀节目差不了多少; 而从内容和交互形式来看, 又何传统电台神似, 无非媒介从无线电波转为网络. 那是什么赋予了「播客」区分于音乐、广播、视频等其他媒介...</div></div></div></a></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>Related Articles</span></div><div class="relatedPosts-list"><a class="pagination-related" href="/blog/posts/511ce731/" title="赛博漫谈 | 媒介即隐喻 媒介即认知"><img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud.easonsi.site/img/SamuraiChamploo/samurai-champloo-00010.jpg" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2021-11-28</div><div class="info-item-2">赛博漫谈 | 媒介即隐喻 媒介即认知</div></div><div class="info-2"><div class="info-item-1"> But remenber, please, the Law by which we live, wer are not built to comprehend a lie.但是, 请记住我们存活的法则, 我们被造出来, 可不能理解谎言.——The Secret of the Machines, BY RUDYARD KIPLING, 摘自《我这样的机器》  于是, 免不了谈到「媒介」 —— 作为形式, 作为技术, 作为手段; 作为包围着现代生活的方方面面, 作为人际沟通的方式, 作为我们对于世界的想象. 媒介即信息逃不掉麦克卢汉那句「媒介及信息」(The medium is the message, Understanding Media: The Extensions of Man, 1964). 简言之, 传播内容受到传播形式的影响. 自然, 这里的媒介无非是六十年代的那几样, 文字、电报、图片、电影 —— 作为前互联网时代的观察, 当时的媒介形态相较于今还算简单; 然而从媒介的物理形态而言, 却也覆盖了生物的多数感官.  最近才读那本畅销书《娱乐至死》, 波兹曼进一步补充...</div></div></div></a><a class="pagination-related" href="/blog/posts/8cedf62b/" title="赛博漫谈 | What a wonderful world"><img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud.easonsi.site/img/Ukiyo-e/ukiyo-e-00010.jpg" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2021-12-04</div><div class="info-item-2">赛博漫谈 | What a wonderful world</div></div><div class="info-2"><div class="info-item-1"> 您那小小的歌唱着的鸟儿，即将飞向远方了。夜莺请一直往南走吧，到暖和的地方去生活。——《扬名立万》  于是今年大概是所谓「播客元年」, 即使每一年是太多事物的元年也见证了多少泡沫的破碎; 但当看到网易云和QQ音乐不惜在底部栏新增一个「播客」页面, 终于意识到播客成了互联网流量巨头新的宠儿.  实际上, 播客这一形式早已不新鲜, 不鸟万先生的《IT公论》开播自2013年11月, 而 Apple Podcast 从 iTunes 独立出来则是 2012年, 更不用提英文世界中的媒介尝试和发展历史.  那么何为播客, 为何又要谈播客? 播客何为Wiki 告诉我, 播客 「是一种数字媒体，指一系列的音频、视频、在线电台或文字以列表形式经互联网发布，听众可下载或串流当中的文件以欣赏」「播客创作者将音频或视频上传至RSS或在线播客平台，听众或观众则通过软件获取节目更新」.  播客为何? 数字音频, 支持下载或者流播, 从媒介上看几乎和音乐或脱口秀节目差不了多少; 而从内容和交互形式来看, 又何传统电台神似, 无非媒介从无线电波转为网络. 那是什么赋予了「播客」区分于音乐、广播、视频等其他媒介...</div></div></div></a><a class="pagination-related" href="/blog/posts/88153aab/" title="赛博漫谈 | 不要问科技给了什么，问它拿走了什么"><img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud.easonsi.site/img/CowboyBepop/cowboy-bepop-00004.jpg" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2021-11-22</div><div class="info-item-2">赛博漫谈 | 不要问科技给了什么，问它拿走了什么</div></div><div class="info-2"><div class="info-item-1"> 我不能去憎恨别人，因为我没时间。 ——《生之欲》  无主题漫谈第一期 关于在线生活题源《一天世界》ep79。那便顺着这一期播客的主题，关于 social distance 或者「在线生活」对于人生活方式的影响开始吧。 其中提到，我们大概已经「无法想象没有互联网的生活」。是的，技术所带来的社会发展往往是不可逆的，接受某种生活方式的同时意味着对于过去所习以为常的作息的诀别，再回首已是积重难返。电力、燃油、通讯、屏幕……当一项技术成为「基础设施」浇筑在日常生活中，过去的被替代者成为真正或美好或不的昨日世界。能够取代的，或许只能是时代浪潮的下一次变革。 当然，我不是否认「独身自好」的可能性，在哪一个年代我们都不能忽视那些「至今不用手机」「不接触互联网」的人们 —— 或是时代淘沙，或是思想家，或是行为艺术；同样不可否认的是这种诀别所带来的可能的快乐与满足。然而，这样的生活方式终归只是少数派，这里涉及的是总体论上对于社会心理的影响。 那么，作为现今生活底层结构的「互联网」，对于我们的世界产生了怎样的改变？这自然是大之又大的话题，联网是 Tim Berners-Lee 那一代人的想象还是现今...</div></div></div></a><a class="pagination-related" href="/blog/posts/92983cd0/" title="赛博漫谈 | git 作为方法"><img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud.easonsi.site/img/GhostBlade-WLOP/ghost-blade-00009.jpg" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2022-08-26</div><div class="info-item-2">赛博漫谈 | git 作为方法</div></div><div class="info-2"><div class="info-item-1"> 我已经不再知道些什么, 也不在乎, 而且不认为这有什么要紧的, 而突然间, 我感到了真正的自由. —— 杰克凯鲁亚克, from MONO 0817日签  仍然相关过分伸展的欲望… 文笔颓唐, 但我还要说自己是个无可救药的乐天派.  记录的欲望纯然的秩序是美, 如置景规范的相片, 如烟雨纷纷的飞雪. 所以秩序存在着一定的吸引力, 整理是一种天然的欲望.  没有打理卫生的决心, 但能鸠占鹊巢还是向往整洁的环境的. 适度的强迫症或洁癖值得钦佩, 虽然对个人而言行动的决心抵不过身体的惰性.   from 隐入尘烟  惰性人人有之, 据说还是生产力进步的原动力, 似乎还没那么糟糕. 如何借工具来填补惰性? 所谓科学方法论.  缺乏实在的行动力, 但川水东流若留不下些许印记总还是过分虚无了; 是以, 退而求之于记录的欲望. 「记录」, 是秦皇汉武的丰功伟绩, 是传道授业的细水长流, 是私密阴幽的私人日记.  诉诸记录, 因为个体性没有那么坚强; 用数量作标尺, 给自己交上答卷; 来掩盖眼睛里的空洞, 走在那阳关大道抵御寒冷.  诉诸记录, 也因记忆的淡薄. 一方面是回忆的不可靠, 另一方...</div></div></div></a></div></div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> Comments</span></div><div class="comment-switch"><span class="first-comment">Livere</span><span id="switch-btn"></span><span class="second-comment">Disqus</span></div></div><div class="comment-wrap"><div><div id="lv-container" data-id="city" data-uid="MTAyMC81MTk1NS8yODQzNg"></div></div><div><div id="disqus_thread"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud.easonsi.site/img/_meta/avatar.jpg" onerror="this.onerror=null;this.src='https://cloud.easonsi.site/img/_meta/404_image.png'" alt="avatar"/></div><div class="author-info-name">Easonshi</div><div class="author-info-description">Neo learner</div><div class="site-data"><a href="/blog/archives/"><div class="headline">Articles</div><div class="length-num">16</div></a><a href="/blog/tags/"><div class="headline">Tags</div><div class="length-num">17</div></a><a href="/blog/categories/"><div class="headline">Categories</div><div class="length-num">2</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Lightblues"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/Lightblues" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:oldcitystal@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="/blog/atom.xml" target="_blank" title="RSS"><i class="fa fa-rss"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">🎉 note 试营业</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Contents</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%83%E5%AE%87%E5%AE%99%E4%BD%95%E8%B0%93"><span class="toc-number">1.</span> <span class="toc-text">元宇宙何谓</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B8%B8%E6%88%8F%E4%BD%9C%E4%B8%BA%E5%AA%92%E4%BB%8B-%E6%B8%B8%E6%88%8F-%E2%80%94%E2%80%94-%E4%BA%BA%E7%9A%84%E5%BB%B6%E4%BC%B8"><span class="toc-number">2.</span> <span class="toc-text">游戏作为媒介 | 游戏 —— 人的延伸</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B8%B8%E6%88%8F%E6%98%AF%E6%84%9F%E5%AE%98%E7%9A%84%E5%BB%B6%E4%BC%B8"><span class="toc-number">2.1.</span> <span class="toc-text">游戏是感官的延伸</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B8%B8%E6%88%8F%E6%98%AF%E4%BA%BA%E4%BB%AC%E7%9A%84%E6%80%9D%E6%83%B3%E3%80%81%E6%83%85%E6%84%9F%E3%80%81%E6%AC%B2%E6%9C%9B%E3%80%81%E6%83%B3%E8%B1%A1%E7%9A%84%E5%BB%B6%E4%BC%B8"><span class="toc-number">2.2.</span> <span class="toc-text">游戏是人们的思想、情感、欲望、想象的延伸</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B8%B8%E6%88%8F%E5%A1%91%E9%80%A0%E8%AE%A4%E7%9F%A5"><span class="toc-number">2.3.</span> <span class="toc-text">游戏塑造认知</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B8%B8%E6%88%8F%E6%98%AF%E7%A4%BE%E4%BC%9A%E7%94%9F%E6%B4%BB%E7%9A%84%E5%BB%B6%E4%BC%B8"><span class="toc-number">2.4.</span> <span class="toc-text">游戏是社会生活的延伸</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%83%E5%AE%87%E5%AE%99%E4%BD%9C%E4%B8%BA%E6%B8%B8%E6%88%8F-%E6%B8%B8%E6%88%8F%E5%8C%96%E7%9A%84%E7%A4%BE%E4%BC%9A"><span class="toc-number">3.</span> <span class="toc-text">元宇宙作为游戏 | 游戏化的社会</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%83%E5%AE%87%E5%AE%99-%E4%B8%8D-%E6%98%AF%E6%B8%B8%E6%88%8F"><span class="toc-number">3.1.</span> <span class="toc-text">元宇宙(不)是游戏</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A4%BE%E4%BC%9A%E7%94%9F%E6%B4%BB%E7%9A%84%E6%B8%B8%E6%88%8F%E5%8C%96"><span class="toc-number">3.2.</span> <span class="toc-text">社会生活的游戏化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%95%E4%BB%A5%E5%85%83%E5%AE%87%E5%AE%99"><span class="toc-number">3.3.</span> <span class="toc-text">何以元宇宙</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Posts</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/blog/posts/81a40e46/" title="EP03: 科学, 哲学, 与AGI"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud.easonsi.site/img/GhostBlade-WLOP/ghost-blade-00002.jpg" onerror="this.onerror=null;this.src='https://cloud.easonsi.site/img/_meta/404_image.png'" alt="EP03: 科学, 哲学, 与AGI"/></a><div class="content"><a class="title" href="/blog/posts/81a40e46/" title="EP03: 科学, 哲学, 与AGI">EP03: 科学, 哲学, 与AGI</a><time datetime="2024-12-04T08:22:25.000Z" title="Created 2024-12-04 16:22:25">2024-12-04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/blog/posts/f6a33ed0/" title="EP02: 简谈数据与模型"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud.easonsi.site/img/GhostBlade-WLOP/ghost-blade-00004.jpg" onerror="this.onerror=null;this.src='https://cloud.easonsi.site/img/_meta/404_image.png'" alt="EP02: 简谈数据与模型"/></a><div class="content"><a class="title" href="/blog/posts/f6a33ed0/" title="EP02: 简谈数据与模型">EP02: 简谈数据与模型</a><time datetime="2024-12-04T08:21:11.000Z" title="Created 2024-12-04 16:21:11">2024-12-04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/blog/posts/6faa6f6a/" title="EP01: 走在奔赴三十的路上"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud.easonsi.site/img/cosmos/cosmos-00010.jpg" onerror="this.onerror=null;this.src='https://cloud.easonsi.site/img/_meta/404_image.png'" alt="EP01: 走在奔赴三十的路上"/></a><div class="content"><a class="title" href="/blog/posts/6faa6f6a/" title="EP01: 走在奔赴三十的路上">EP01: 走在奔赴三十的路上</a><time datetime="2024-12-04T08:18:46.000Z" title="Created 2024-12-04 16:18:46">2024-12-04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/blog/posts/a2121cb8/" title="关于电子情绪价值"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud.easonsi.site/img/Ukiyo-e/ukiyo-e-00006.jpg" onerror="this.onerror=null;this.src='https://cloud.easonsi.site/img/_meta/404_image.png'" alt="关于电子情绪价值"/></a><div class="content"><a class="title" href="/blog/posts/a2121cb8/" title="关于电子情绪价值">关于电子情绪价值</a><time datetime="2024-07-18T05:17:34.000Z" title="Created 2024-07-18 13:17:34">2024-07-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/blog/posts/8214ab05/" title="沙地行记"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud.easonsi.site/img/Fate/fate-00009.jpg" onerror="this.onerror=null;this.src='https://cloud.easonsi.site/img/_meta/404_image.png'" alt="沙地行记"/></a><div class="content"><a class="title" href="/blog/posts/8214ab05/" title="沙地行记">沙地行记</a><time datetime="2024-05-07T09:19:36.000Z" title="Created 2024-05-07 17:19:36">2024-05-07</time></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2021 - 2026 By Easonshi</span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Reading Mode"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="Toggle Between Traditional and Simplified Chinese">繁</button><button id="darkmode" type="button" title="Toggle Between Light and Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle Between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Settings"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table of Contents"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="Scroll to Comments"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="Back to Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/blog/js/utils.js?v=5.5.4-b1"></script><script src="/blog/js/main.js?v=5.5.4-b1"></script><script src="/blog/js/tw_cn.js?v=5.5.4-b1"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@19.1.3/dist/lazyload.iife.min.js"></script><div class="js-pjax"><script>(() => {
+  const isShuoshuo = GLOBAL_CONFIG_SITE.pageType === 'shuoshuo'
+
+  const loadLivere = (el, path) => {
+    window.livereOptions = {
+      refer: path || location.pathname
+    }
+
+    if (isShuoshuo) {
+      window.shuoshuoComment.destroyLivere = () => {
+        if (el.children.length) {
+          el.innerHTML = ''
+          el.classList.add('no-comment')
+        }
+      }
+    }
+
+    if (typeof LivereTower === 'object') window.LivereTower.init()
+    else {
+      (function(d, s) {
+          var j, e = d.getElementsByTagName(s)[0];
+          if (typeof LivereTower === 'function') { return; }
+          j = d.createElement(s);
+          j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+          j.async = true;
+          e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    }
+  }
+
+  if (isShuoshuo) {
+    'Livere' === 'Livere'
+      ? window.shuoshuoComment = { loadComment: loadLivere }
+      : window.loadOtherComment = loadLivere
+    return
+  }
+
+  if ('Livere' === 'Livere' || !false) {
+    if (false) btf.loadComment(document.getElementById('lv-container'), loadLivere)
+    else loadLivere()
+  } else {
+    window.loadOtherComment = loadLivere
+  }
+})()</script><script>(() => {
+  const isShuoshuo = GLOBAL_CONFIG_SITE.pageType === 'shuoshuo'
+
+  const disqusReset = conf => {
+    window.DISQUS && window.DISQUS.reset({
+      reload: true,
+      config: conf
+    })
+  }
+
+  const loadDisqus = (el, path) => {
+    if (isShuoshuo) {
+      window.shuoshuoComment.destroyDisqus = () => {
+        if (el.children.length) {
+          el.innerHTML = ''
+          el.classList.add('no-comment')
+        }
+      }
+    }
+
+    window.disqus_identifier = isShuoshuo ? path : '/blog/posts/70447ef0/'
+    window.disqus_url = isShuoshuo ? location.origin + path : 'https://lightblues.github.io/blog/posts/70447ef0/'
+
+    const disqus_config = function () {
+      this.page.url = disqus_url
+      this.page.identifier = disqus_identifier
+      this.page.title = '赛博漫谈 | 媒介视角下的元宇宙冷思考'
+    }
+
+    if (window.DISQUS) disqusReset(disqus_config)
+    else {
+      const script = document.createElement('script')
+      script.src = 'https://easonshi.disqus.com/embed.js'
+      script.setAttribute('data-timestamp', +new Date())
+      document.head.appendChild(script)
+    }
+
+    btf.addGlobalFn('themeChange', () => disqusReset(disqus_config), 'disqus')
+  }
+
+  const getCount = async() => {
+    try {
+      const eleGroup = document.querySelector('#post-meta .disqus-comment-count')
+      if (!eleGroup) return
+      const cleanedLinks = eleGroup.href.replace(/#post-comment$/, '')
+
+      const res = await fetch(`https://disqus.com/api/3.0/threads/set.json?forum=easonshi&api_key=&thread:link=${cleanedLinks}`,{
+        method: 'GET'
+      })
+      const result = await res.json()
+
+      const count = result.response.length ? result.response[0].posts : 0
+      eleGroup.textContent = count
+    } catch (err) {
+      console.error(err)
+    }
+  }
+
+  if (isShuoshuo) {
+    'Livere' === 'Disqus'
+      ? window.shuoshuoComment = { loadComment: loadDisqus }
+      : window.loadOtherComment = loadDisqus
+    return
+  }
+
+  if ('Livere' === 'Disqus' || !false) {
+    if (false) btf.loadComment(document.getElementById('disqus_thread'), loadDisqus)
+    else {
+      loadDisqus()
+      
+    }
+  } else {
+    window.loadOtherComment = loadDisqus
+  }
+})()</script></div><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="false"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

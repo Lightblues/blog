@@ -1,0 +1,330 @@
+<!DOCTYPE html><html lang="zh" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>EP03: 科学, 哲学, 与AGI | Easonshi's Space</title><meta name="author" content="Easonshi"><meta name="copyright" content="Easonshi"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="  人与人的谈话需要有限度, 毫无边界的话题延伸容易带来低效的沟通乃至负向交流.     Tao at the age of 10 with mathematician Paul Erdős in 1985. [from wiki]  原本想展开的topic是科幻, 参与了一场关于科学哲学的分..."><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "EP03: 科学, 哲学, 与AGI",
+  "url": "https://lightblues.github.io/blog/posts/81a40e46/",
+  "image": "https://cloud.easonsi.site/img/GhostBlade-WLOP/ghost-blade-00002.jpg",
+  "datePublished": "2024-12-04T08:22:25.000Z",
+  "dateModified": "2026-01-19T08:24:05.757Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Easonshi",
+      "url": "https://lightblues.github.io/blog"
+    }
+  ]
+}</script><link rel="shortcut icon" href="https://cloud.easonsi.site/img/_meta/favicon.ico"><link rel="canonical" href="https://lightblues.github.io/blog/posts/81a40e46/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin=""/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="baidu-site-verification" content="code-5Y8by4jIW3"/><link rel="manifest" href="/blog/null"/><link rel="apple-touch-icon" sizes="180x180" href="/blog/pwa/apple-touch-icon.png"/><link rel="icon" type="image/png" sizes="32x32" href="/blog/pwa/32.png"/><link rel="icon" type="image/png" sizes="16x16" href="/blog/pwa/16.png"/><link rel="mask-icon" href="/blog/pwa/safari-pinned-tab.svg" color="#5bbad5"/><link rel="stylesheet" href="/blog/css/index.css?v=5.5.4-b1"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          const mediaQueryDark = window.matchMedia('(prefers-color-scheme: dark)')
+          const mediaQueryLight = window.matchMedia('(prefers-color-scheme: light)')
+
+          if (theme === undefined) {
+            if (mediaQueryLight.matches) activateLightMode()
+            else if (mediaQueryDark.matches) activateDarkMode()
+            else {
+              const hour = new Date().getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            mediaQueryDark.addEventListener('change', () => {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else {
+            theme === 'light' ? activateLightMode() : activateDarkMode()
+          }
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?07cc68228b5c4f4b4d49b36c1d3656c0";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+btf.addGlobalFn('pjaxComplete', () => {
+  _hmt.push(['_trackPageview',window.location.pathname])
+}, 'baidu_analytics')
+</script><script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-155100419-1"></script><script>window.dataLayer = window.dataLayer || []
+function gtag(){dataLayer.push(arguments)}
+gtag('js', new Date())
+gtag('config', 'UA-155100419-1')
+btf.addGlobalFn('pjaxComplete', () => {
+  gtag('config', 'UA-155100419-1', {'page_path': window.location.pathname})
+}, 'google_analytics')
+</script><script>const GLOBAL_CONFIG = {
+  root: '/blog/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: 'Copy Successful',
+    error: 'Copy Failed',
+    noSupport: 'Browser Not Supported'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just now',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.12.0/dist/infinitegrid.min.js',
+    buttonText: 'Load More'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: true,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'EP03: 科学, 哲学, 与AGI',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'post'
+}</script><meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/blog/atom.xml" title="Easonshi's Space" type="application/atom+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud.easonsi.site/img/_meta/avatar.jpg" onerror="this.onerror=null;this.src='https://cloud.easonsi.site/img/_meta/404_image.png'" alt="avatar"/></div><div class="site-data text-center"><a href="/blog/archives/"><div class="headline">Articles</div><div class="length-num">16</div></a><a href="/blog/tags/"><div class="headline">Tags</div><div class="length-num">17</div></a><a href="/blog/categories/"><div class="headline">Categories</div><div class="length-num">2</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://notes.easonsi.site/"><i class="fa-fw fas fa-sticky-note"></i><span> Notes</span></a></div><div class="menus_item"><a class="site-page" href="/blog/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/blog/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/blog/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/blog/gallery/"><i class="fa-fw fas fa-images"></i><span> Galleries</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-heart"></i><span> About</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/blog/about/"><i class="fa-fw fas fa-address-card"></i><span> About</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(https://cloud.easonsi.site/img/GhostBlade-WLOP/ghost-blade-00002.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/blog/"><span class="site-name">Easonshi's Space</span></a><a class="nav-page-title" href="/blog/"><span class="site-name">EP03: 科学, 哲学, 与AGI</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  Back to Home</span></span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://notes.easonsi.site/"><i class="fa-fw fas fa-sticky-note"></i><span> Notes</span></a></div><div class="menus_item"><a class="site-page" href="/blog/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/blog/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/blog/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/blog/gallery/"><i class="fa-fw fas fa-images"></i><span> Galleries</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-heart"></i><span> About</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/blog/about/"><i class="fa-fw fas fa-address-card"></i><span> About</span></a></li></ul></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">EP03: 科学, 哲学, 与AGI</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2024-12-04T08:22:25.000Z" title="Created 2024-12-04 16:22:25">2024-12-04</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2026-01-19T08:24:05.757Z" title="Updated 2026-01-19 16:24:05">2026-01-19</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">Word Count:</span><span class="word-count">2.2k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">Reading Time:</span><span>6mins</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post Views:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><!-- # EP03: 科学, 哲学, 与AGI -->
+<blockquote>
+<p>人与人的谈话需要有限度, 毫无边界的话题延伸容易带来低效的沟通乃至负向交流. </p>
+</blockquote>
+<!-- 
+https://upload.wikimedia.org/wikipedia/commons/c/c4/Paul_Erdos_with_Terence_Tao.jpg
+https://terrytao.wordpress.com/
+https://en.wikipedia.org/wiki/Terence_Tao
+Tao at the age of 10 with mathematician Paul Erdős in 1985
+#tech #AGI #philosophy
+-->
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://upload.wikimedia.org/wikipedia/commons/c/c4/Paul_Erdos_with_Terence_Tao.jpg" alt="Tao at the age of 10 with mathematician Paul Erdős in 1985"></p>
+<center>Tao at the age of 10 with mathematician Paul Erdős in 1985. [from wiki]</center>
+
+<p>原本想展开的topic是科幻, 参与了一场关于科学哲学的分享, 不妨就先从科学说起. </p>
+<ol>
+<li>(科学是什么) 首先的问题在于, 不同人&#x2F;群体眼中的 “科学” 是不一样的. 生活在这片土地的我们这一代人, 难免会接受到 “科学技术是第一生产力” 的观点; 可能生活在原始部落的人们, 尚不知道科学为何物; 乃至神学的信徒可能视科学不过愚人的玩物… 对于概念的理解, 受到时间, 地点, 学识, 信仰等各种因素的参杂. </li>
+<li>(什么是大众想象中的科学) 那就只能从一般的, 普罗大众所理解的 “科学” 讲起了, 或者说, 存在于群众想象中的科学的模样.[^1] 参考主持人的预设, 首先一定是精确可信赖的, 并且可能是沿着既有的路线稳态上升的 (这种对于大众认知的想象当然是存疑的, 在此不做展开) – 权威性, 科学进步论. </li>
+<li>(科学是连续进展的吗) 于是, 引出了本次分享的主题: 科学的发展是连续进步的吗? 谈论的内容是托马斯·库恩的《科学革命的结构》, 一些简要的关键词包括: 一个学科存在着一定的 “范式”[^2], 那些 “常规科学” 更符合上述普罗认知的科学特质, 范式是基本固定的; 与之相反, 例如量子力学领域百家争鸣, 不断进行着范式的推翻与重构, 也即 “非常规科学”. 一个更极端的词是 “不可通约性”, 也即不同学科乃至不同时代的同一学科之间由于范式之间存在根本性的差异而无法对齐和理解. [^3]</li>
+<li>(视角1: 科学的阶越进步) 或许是当下的自己所接受信息的缘故, 对于库恩的观点没有感觉什么不合理的地方 – 回望科学史 (最显著的, 例如物理学), 无论是天体观念还是到量子理论, 热力学, 电磁学, 当代学科的认知无不是经历了不断的推翻与观念的重构, 或曰 “阶越进步”. (推荐B站UP “长河劫”) 然而, 私以为这种阶越总还是有据可循的, 或者用LLM里面时髦的词来说, 库恩无法找到 “氧气发现的那一刻”, 只不过是历史的scale还不够细, 缺失的细节在后人眼中就变成了一蹴而就的范式转变. 另一方面, 无论是物理学所谓 “二十世纪初的三朵乌云”, 还是哥德尔对于数学理论大厦的冲击, 乃至休谟对于哲学的批判, 都是在自身的体系下被完成消化的. [^6]</li>
+<li>(视角2: 科学作为宗教) 参与不同学科背景人的讨论的好处在于多样性, 例如大家可以在场内听到信誓旦旦对于科学是一种新宗教的言说. 受到自己唯物主义底色排斥的同时, 其实需要对于这一问题做更深的思考. 1) 这一讨论的视角, 是我们把科学的解释内化成了我们看待世界宇宙运转的方式, 这种世界观是替代了之前可能的宗教&#x2F;君主世界观 (之前的神学体系同样承担了解释世界运转方式的责任, 并且同样是 “客观的, 进步的”); 2) 这种世界认知对于人日常生活的意义在于, 它是人们日常生活的 “理论” 基础, 乃至需要作为人面临很多终极问题时候的解答; [^4] 3) 两者都提供对于世界的解释 (可能对于从小生活在某一体系下的人来说, 两者的解释力是等价的), 但相较而言科学对于一些事物的解释是更精确可量化的, 更重要的, 科学所演化出来的技术可以作用于现实产生更为可感的结果. </li>
+<li>(科学与实用主义) 科学是实证的, 并且 (部分) 是可感知可应用的; 于是, 当讨论大众与科学之间关系的时候, 如昨晚讨论的, 存在 “科学 -&gt; 技术 -&gt; 产品 -&gt; 用户 -&gt; 社会” 的链条, 科学转化为技术用来研发产品, 作为用户感知到的是终端产品, 接受并参与社会评价. 因此, 当我们的社会在推崇科学的时候, 更多指代的是其后面所跟着的 “技术”, 带有强烈的实用主义倾向. [^5] 然而, 现代科学前沿很多是非实用主义的, 并且依赖极高的资源和基础技术支持, 因此可能和社会产生偏差乃至摩擦. 认知存在隔阂, 观念存在分歧; 并且中间不免会有政治考虑 (参见知乎对于王贻芳的讨论); 于是, 大众与所谓科学的关系, 其实是复杂且多变的.</li>
+<li>(AGI) 另一个我所关注的话题, 来到了AGI. 首先, 现在的AI到了什么程度? AlphaFold 的出现很大程度颠覆了生命科学和药物研发, AI for Science 也不是简单的 Transformer 可以概括的, Terence Tao 在近期的数学研究中也大量尝试应用 AI as assistant 甚至作为主要作者. 不去论AI的 “创造力”, 单就作为一个研究助理而言, 其可以胜任可能原本只能 Top 0.1% 的人类能完成的事情. 当然, 我们知道最顶尖那批科学家的优越性 (长尾), 但于此同时, AI 在这方面的演化是可持续的吗? 从我一个外行的视角来看, 似乎正和LLM一样沿着指数上升的方式在发展. 推论 – 一个不论是否存在 “意识” 但至少在智力&#x2F;逻辑推理方面远胜人类的 AI 的出现. </li>
+<li>(AGI 与伦理) 假设有这样的人工智能的出现, 确实会引出一堆的伦理问题. 1) 人类是否愿意接受一个更高阶智能生产的 “知识”, 人类智性体现在哪里? 2) 谁去塑造&#x2F;控制这样的智能, 因为这样的存在注定掌握在少数人的受众, 参考 OpenAI. 3) 如何避免祂的出现带来的潜在歧视问题, 假设其输出是所有的人类语料, 那记录的文本本身就天然带有文字记录上的不平衡. 4) 祂是否会变成一个 Big Brother 来指导人类的生活, 人是否愿意接受这样的上帝? 5) 在技术的控制方面, 掌握祂是否也掌握了隐性的对于人的控制? [^7]</li>
+</ol>
+<p>就此打住吧, 暂且留一些问题, 权作警戒. </p>
+<p>2024.11.30</p>
+<p>[^1]: 这样说的原因有二, 一是说科学的进步已经将自己藏进了少数人能进入的高阁, 因此大众认知和学术圈层有隔离; 二是两者之间需要通过媒体的中介, 又存在媒介权力的问题.<br>[^2]: 原本范式一词是在这里提出来的; 演进到现在, paradigm一词在AI领域有被过度滥用的倾向.<br>[^3]: 题外话, 好记的关键词真的是可以让一些学术人名被流传下来的重要特质, 参见忽左忽右 EP 363. 另一方面, 一本书流传到现在仅仅被几个关键词替代也会让人有些不安.<br>[^6]: 数学是否属于科学哲学还需要讨论 (哲学的另一个分支叫数学哲学), 本文对于数学方面的例子仅作无端联想.<br>[^4]: 从这个维度来看, 科学相较于宗教在对于人的慰藉上所能承担的是有限的. 也怪不得很多科学家仍然保有宗教信仰.<br>[^5]: 突然联想到 Research &amp; Development.<br>[^7]: 首先, 这样的控制有切实的存在可能性, 我们知道GPT在服务的时候肯定做了分流, 而近期谣传不良IP使用到的GPT被 “降智”, 这种肉体人完全无法区分的智力歧视令人恐怖; 其次, 我说的是技术对于人类认知所完成的彻底的塑造, 这种控制对于前AI时代的人们来说已经深入骨髓, 而若是直接控制了人的认知入口, 这样的控制甚至是无法感知无从追溯的.</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>Author: </span><span class="post-copyright-info"><a href="https://lightblues.github.io/blog">Easonshi</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>Link: </span><span class="post-copyright-info"><a href="https://lightblues.github.io/blog/posts/81a40e46/">https://lightblues.github.io/blog/posts/81a40e46/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>Copyright Notice: </span><span class="post-copyright-info">All articles on this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless otherwise stated.</span></div></div><div class="tag_share"><div class="post-share"><div class="social-share" data-image="https://cloud.easonsi.site/img/GhostBlade-WLOP/ghost-blade-00002.jpg" data-sites="facebook,x,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related full-width" href="/blog/posts/f6a33ed0/" title="EP02: 简谈数据与模型"><img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud.easonsi.site/img/GhostBlade-WLOP/ghost-blade-00004.jpg" onerror="onerror=null;src='https://cloud.easonsi.site/img/_meta/404_image.png'" alt="cover of next post"><div class="info text-right"><div class="info-1"><div class="info-item-1">Next</div><div class="info-item-2">EP02: 简谈数据与模型</div></div><div class="info-2"><div class="info-item-1">  从面向测试的模型训练展开    11月16日，南非国家海上救援部门将一只在近海死亡的座头鲸拖移至深海区域，防止这只死鲸鱼被冲上海岸造成污染。from iDaily 摄影师：Nic   算是完成了一版业务 (LLM) 模型的实现和迭代, 结合此前认知对于数据构造和模型构建做简单的总结.  [A] 流程 of 测试导向  (不考虑其他场景其他任务) 提升特定任务能力的最直接的方式, 仍然是增加针对性数据 – 显然的. 直觉的.  进一步地, 就算是针对性数据构造和训练, 如 ML 第一节课就会提到的, 面临训练和泛化的平衡. e.g., 训练多少个 ep, 用多大的 batch 和 lr 来训练. 这是经验性的尝试.  比如说跑了 3 组消融, 在之后的问题是对于模型的评估, 比如单纯为了选出业务最优的模型, 经验性和直觉混杂在一起, cherry-pick 一个恰巧表现最好的模型. DONE  [B] 算法的价值  上面的流程听上去是及不性感的事项, 似乎把理论的, 课堂所授都丢掉了; 或言之, 面向测试集训练, 模型作为黑箱. 于是, 对这一流程, 可分别做一评论.  数据:...</div></div></div></a></nav><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> Comments</span></div><div class="comment-switch"><span class="first-comment">Livere</span><span id="switch-btn"></span><span class="second-comment">Disqus</span></div></div><div class="comment-wrap"><div><div id="lv-container" data-id="city" data-uid="MTAyMC81MTk1NS8yODQzNg"></div></div><div><div id="disqus_thread"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud.easonsi.site/img/_meta/avatar.jpg" onerror="this.onerror=null;this.src='https://cloud.easonsi.site/img/_meta/404_image.png'" alt="avatar"/></div><div class="author-info-name">Easonshi</div><div class="author-info-description">Neo learner</div><div class="site-data"><a href="/blog/archives/"><div class="headline">Articles</div><div class="length-num">16</div></a><a href="/blog/tags/"><div class="headline">Tags</div><div class="length-num">17</div></a><a href="/blog/categories/"><div class="headline">Categories</div><div class="length-num">2</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Lightblues"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/Lightblues" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:oldcitystal@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="/blog/atom.xml" target="_blank" title="RSS"><i class="fa fa-rss"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">🎉 note 试营业</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Posts</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/blog/posts/81a40e46/" title="EP03: 科学, 哲学, 与AGI"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud.easonsi.site/img/GhostBlade-WLOP/ghost-blade-00002.jpg" onerror="this.onerror=null;this.src='https://cloud.easonsi.site/img/_meta/404_image.png'" alt="EP03: 科学, 哲学, 与AGI"/></a><div class="content"><a class="title" href="/blog/posts/81a40e46/" title="EP03: 科学, 哲学, 与AGI">EP03: 科学, 哲学, 与AGI</a><time datetime="2024-12-04T08:22:25.000Z" title="Created 2024-12-04 16:22:25">2024-12-04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/blog/posts/f6a33ed0/" title="EP02: 简谈数据与模型"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud.easonsi.site/img/GhostBlade-WLOP/ghost-blade-00004.jpg" onerror="this.onerror=null;this.src='https://cloud.easonsi.site/img/_meta/404_image.png'" alt="EP02: 简谈数据与模型"/></a><div class="content"><a class="title" href="/blog/posts/f6a33ed0/" title="EP02: 简谈数据与模型">EP02: 简谈数据与模型</a><time datetime="2024-12-04T08:21:11.000Z" title="Created 2024-12-04 16:21:11">2024-12-04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/blog/posts/6faa6f6a/" title="EP01: 走在奔赴三十的路上"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud.easonsi.site/img/cosmos/cosmos-00010.jpg" onerror="this.onerror=null;this.src='https://cloud.easonsi.site/img/_meta/404_image.png'" alt="EP01: 走在奔赴三十的路上"/></a><div class="content"><a class="title" href="/blog/posts/6faa6f6a/" title="EP01: 走在奔赴三十的路上">EP01: 走在奔赴三十的路上</a><time datetime="2024-12-04T08:18:46.000Z" title="Created 2024-12-04 16:18:46">2024-12-04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/blog/posts/a2121cb8/" title="关于电子情绪价值"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud.easonsi.site/img/Ukiyo-e/ukiyo-e-00006.jpg" onerror="this.onerror=null;this.src='https://cloud.easonsi.site/img/_meta/404_image.png'" alt="关于电子情绪价值"/></a><div class="content"><a class="title" href="/blog/posts/a2121cb8/" title="关于电子情绪价值">关于电子情绪价值</a><time datetime="2024-07-18T05:17:34.000Z" title="Created 2024-07-18 13:17:34">2024-07-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/blog/posts/8214ab05/" title="沙地行记"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud.easonsi.site/img/Fate/fate-00009.jpg" onerror="this.onerror=null;this.src='https://cloud.easonsi.site/img/_meta/404_image.png'" alt="沙地行记"/></a><div class="content"><a class="title" href="/blog/posts/8214ab05/" title="沙地行记">沙地行记</a><time datetime="2024-05-07T09:19:36.000Z" title="Created 2024-05-07 17:19:36">2024-05-07</time></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2021 - 2026 By Easonshi</span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Reading Mode"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="Toggle Between Traditional and Simplified Chinese">繁</button><button id="darkmode" type="button" title="Toggle Between Light and Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle Between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Settings"><i class="fas fa-cog fa-spin"></i></button><a id="to_comment" href="#post-comment" title="Scroll to Comments"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="Back to Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/blog/js/utils.js?v=5.5.4-b1"></script><script src="/blog/js/main.js?v=5.5.4-b1"></script><script src="/blog/js/tw_cn.js?v=5.5.4-b1"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@19.1.3/dist/lazyload.iife.min.js"></script><div class="js-pjax"><script>(() => {
+  const isShuoshuo = GLOBAL_CONFIG_SITE.pageType === 'shuoshuo'
+
+  const loadLivere = (el, path) => {
+    window.livereOptions = {
+      refer: path || location.pathname
+    }
+
+    if (isShuoshuo) {
+      window.shuoshuoComment.destroyLivere = () => {
+        if (el.children.length) {
+          el.innerHTML = ''
+          el.classList.add('no-comment')
+        }
+      }
+    }
+
+    if (typeof LivereTower === 'object') window.LivereTower.init()
+    else {
+      (function(d, s) {
+          var j, e = d.getElementsByTagName(s)[0];
+          if (typeof LivereTower === 'function') { return; }
+          j = d.createElement(s);
+          j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+          j.async = true;
+          e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    }
+  }
+
+  if (isShuoshuo) {
+    'Livere' === 'Livere'
+      ? window.shuoshuoComment = { loadComment: loadLivere }
+      : window.loadOtherComment = loadLivere
+    return
+  }
+
+  if ('Livere' === 'Livere' || !false) {
+    if (false) btf.loadComment(document.getElementById('lv-container'), loadLivere)
+    else loadLivere()
+  } else {
+    window.loadOtherComment = loadLivere
+  }
+})()</script><script>(() => {
+  const isShuoshuo = GLOBAL_CONFIG_SITE.pageType === 'shuoshuo'
+
+  const disqusReset = conf => {
+    window.DISQUS && window.DISQUS.reset({
+      reload: true,
+      config: conf
+    })
+  }
+
+  const loadDisqus = (el, path) => {
+    if (isShuoshuo) {
+      window.shuoshuoComment.destroyDisqus = () => {
+        if (el.children.length) {
+          el.innerHTML = ''
+          el.classList.add('no-comment')
+        }
+      }
+    }
+
+    window.disqus_identifier = isShuoshuo ? path : '/blog/posts/81a40e46/'
+    window.disqus_url = isShuoshuo ? location.origin + path : 'https://lightblues.github.io/blog/posts/81a40e46/'
+
+    const disqus_config = function () {
+      this.page.url = disqus_url
+      this.page.identifier = disqus_identifier
+      this.page.title = 'EP03: 科学, 哲学, 与AGI'
+    }
+
+    if (window.DISQUS) disqusReset(disqus_config)
+    else {
+      const script = document.createElement('script')
+      script.src = 'https://easonshi.disqus.com/embed.js'
+      script.setAttribute('data-timestamp', +new Date())
+      document.head.appendChild(script)
+    }
+
+    btf.addGlobalFn('themeChange', () => disqusReset(disqus_config), 'disqus')
+  }
+
+  const getCount = async() => {
+    try {
+      const eleGroup = document.querySelector('#post-meta .disqus-comment-count')
+      if (!eleGroup) return
+      const cleanedLinks = eleGroup.href.replace(/#post-comment$/, '')
+
+      const res = await fetch(`https://disqus.com/api/3.0/threads/set.json?forum=easonshi&api_key=&thread:link=${cleanedLinks}`,{
+        method: 'GET'
+      })
+      const result = await res.json()
+
+      const count = result.response.length ? result.response[0].posts : 0
+      eleGroup.textContent = count
+    } catch (err) {
+      console.error(err)
+    }
+  }
+
+  if (isShuoshuo) {
+    'Livere' === 'Disqus'
+      ? window.shuoshuoComment = { loadComment: loadDisqus }
+      : window.loadOtherComment = loadDisqus
+    return
+  }
+
+  if ('Livere' === 'Disqus' || !false) {
+    if (false) btf.loadComment(document.getElementById('disqus_thread'), loadDisqus)
+    else {
+      loadDisqus()
+      
+    }
+  } else {
+    window.loadOtherComment = loadDisqus
+  }
+})()</script></div><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="false"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

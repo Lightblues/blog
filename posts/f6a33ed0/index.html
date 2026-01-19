@@ -1,0 +1,353 @@
+<!DOCTYPE html><html lang="zh" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>EP02: 简谈数据与模型 | Easonshi's Space</title><meta name="author" content="Easonshi"><meta name="copyright" content="Easonshi"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="  从面向测试的模型训练展开    11月16日，南非国家海上救援部门将一只在近海死亡的座头鲸拖移至深海区域，防止这只死鲸鱼被冲上海岸造成污染。from iDaily 摄影师：Nic   算是完成了一版业务 (LLM) 模型的实现和迭代, 结合此前认知对于数据构造和模型构建做简单的总结.  [..."><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "EP02: 简谈数据与模型",
+  "url": "https://lightblues.github.io/blog/posts/f6a33ed0/",
+  "image": "https://cloud.easonsi.site/img/GhostBlade-WLOP/ghost-blade-00004.jpg",
+  "datePublished": "2024-12-04T08:21:11.000Z",
+  "dateModified": "2026-01-19T08:24:05.757Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Easonshi",
+      "url": "https://lightblues.github.io/blog"
+    }
+  ]
+}</script><link rel="shortcut icon" href="https://cloud.easonsi.site/img/_meta/favicon.ico"><link rel="canonical" href="https://lightblues.github.io/blog/posts/f6a33ed0/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin=""/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="baidu-site-verification" content="code-5Y8by4jIW3"/><link rel="manifest" href="/blog/null"/><link rel="apple-touch-icon" sizes="180x180" href="/blog/pwa/apple-touch-icon.png"/><link rel="icon" type="image/png" sizes="32x32" href="/blog/pwa/32.png"/><link rel="icon" type="image/png" sizes="16x16" href="/blog/pwa/16.png"/><link rel="mask-icon" href="/blog/pwa/safari-pinned-tab.svg" color="#5bbad5"/><link rel="stylesheet" href="/blog/css/index.css?v=5.5.4-b1"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          const mediaQueryDark = window.matchMedia('(prefers-color-scheme: dark)')
+          const mediaQueryLight = window.matchMedia('(prefers-color-scheme: light)')
+
+          if (theme === undefined) {
+            if (mediaQueryLight.matches) activateLightMode()
+            else if (mediaQueryDark.matches) activateDarkMode()
+            else {
+              const hour = new Date().getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            mediaQueryDark.addEventListener('change', () => {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else {
+            theme === 'light' ? activateLightMode() : activateDarkMode()
+          }
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?07cc68228b5c4f4b4d49b36c1d3656c0";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+btf.addGlobalFn('pjaxComplete', () => {
+  _hmt.push(['_trackPageview',window.location.pathname])
+}, 'baidu_analytics')
+</script><script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-155100419-1"></script><script>window.dataLayer = window.dataLayer || []
+function gtag(){dataLayer.push(arguments)}
+gtag('js', new Date())
+gtag('config', 'UA-155100419-1')
+btf.addGlobalFn('pjaxComplete', () => {
+  gtag('config', 'UA-155100419-1', {'page_path': window.location.pathname})
+}, 'google_analytics')
+</script><script>const GLOBAL_CONFIG = {
+  root: '/blog/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: 'Copy Successful',
+    error: 'Copy Failed',
+    noSupport: 'Browser Not Supported'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just now',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.12.0/dist/infinitegrid.min.js',
+    buttonText: 'Load More'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: true,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'EP02: 简谈数据与模型',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'post'
+}</script><meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/blog/atom.xml" title="Easonshi's Space" type="application/atom+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud.easonsi.site/img/_meta/avatar.jpg" onerror="this.onerror=null;this.src='https://cloud.easonsi.site/img/_meta/404_image.png'" alt="avatar"/></div><div class="site-data text-center"><a href="/blog/archives/"><div class="headline">Articles</div><div class="length-num">16</div></a><a href="/blog/tags/"><div class="headline">Tags</div><div class="length-num">17</div></a><a href="/blog/categories/"><div class="headline">Categories</div><div class="length-num">2</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://notes.easonsi.site/"><i class="fa-fw fas fa-sticky-note"></i><span> Notes</span></a></div><div class="menus_item"><a class="site-page" href="/blog/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/blog/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/blog/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/blog/gallery/"><i class="fa-fw fas fa-images"></i><span> Galleries</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-heart"></i><span> About</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/blog/about/"><i class="fa-fw fas fa-address-card"></i><span> About</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(https://cloud.easonsi.site/img/GhostBlade-WLOP/ghost-blade-00004.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/blog/"><span class="site-name">Easonshi's Space</span></a><a class="nav-page-title" href="/blog/"><span class="site-name">EP02: 简谈数据与模型</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  Back to Home</span></span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://notes.easonsi.site/"><i class="fa-fw fas fa-sticky-note"></i><span> Notes</span></a></div><div class="menus_item"><a class="site-page" href="/blog/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/blog/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/blog/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/blog/gallery/"><i class="fa-fw fas fa-images"></i><span> Galleries</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-heart"></i><span> About</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/blog/about/"><i class="fa-fw fas fa-address-card"></i><span> About</span></a></li></ul></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">EP02: 简谈数据与模型</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2024-12-04T08:21:11.000Z" title="Created 2024-12-04 16:21:11">2024-12-04</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2026-01-19T08:24:05.757Z" title="Updated 2026-01-19 16:24:05">2026-01-19</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">Word Count:</span><span class="word-count">1.4k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">Reading Time:</span><span>4mins</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post Views:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><!-- # EP02: 简谈数据与模型 -->
+<blockquote>
+<p>从面向测试的模型训练展开</p>
+</blockquote>
+<!-- A deceased Humpback whale is towed by the National Sea Rescue Institute (NSRI) in Cape Town, South Africa on November 16, 2024.
+一群海鸟在一只死去座头鲸的腹部上啄食鲸鱼肉，开普敦。11月16日，南非国家海上救援部门将一只在近海死亡的座头鲸拖移至深海区域，防止这只死鲸鱼被冲上海岸造成污染。这是开普敦沿岸一个月内发生的第3起座头鲸死亡事件，死因尚不明确。座头鲸广泛分布于全球各大海域，现存数量约12万至15万只。每年6月至12月座头鲸会从南极海域经南非迁徙至莫桑比克和马达加斯加附近海域进行交配繁殖。摄影师：Nic 
+南非转移死亡座头鲸 
+#GPT #LLM #data
+-->
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://raw.githubusercontent.com/Lightblues/BlogImg/master/PicGo/20241118005218.png" alt="Humpback"></p>
+<center>11月16日，南非国家海上救援部门将一只在近海死亡的座头鲸拖移至深海区域，防止这只死鲸鱼被冲上海岸造成污染。from iDaily 摄影师：Nic</center>
+
+
+<p>算是完成了一版业务 (LLM) 模型的实现和迭代, 结合此前认知对于数据构造和模型构建做简单的总结. </p>
+<p>[A] 流程 of 测试导向</p>
+<ol>
+<li>(不考虑其他场景其他任务) 提升特定任务能力的最直接的方式, 仍然是增加针对性数据 – 显然的. 直觉的. </li>
+<li>进一步地, 就算是针对性数据构造和训练, 如 ML 第一节课就会提到的, 面临训练和泛化的平衡. e.g., 训练多少个 ep, 用多大的 batch 和 lr 来训练. 这是经验性的尝试. </li>
+<li>比如说跑了 3 组消融, 在之后的问题是对于模型的评估, 比如单纯为了选出业务最优的模型, 经验性和直觉混杂在一起, cherry-pick 一个恰巧表现最好的模型. DONE</li>
+</ol>
+<p>[B] 算法的价值</p>
+<ol>
+<li>上面的流程听上去是及不性感的事项, 似乎把理论的, 课堂所授都丢掉了; 或言之, 面向测试集训练, 模型作为黑箱. 于是, 对这一流程, 可分别做一评论. </li>
+<li><strong>数据</strong>: 数据自然是重要的, 特别是在 LLM 基座能力足够的场景下, 可能少量的优质数据要远远优于杂乱的大批量数据. 如何定义好的数据, 数据构造的方向, 数据的筛选和质量控制. </li>
+<li><strong>训练</strong>: 自然是要有一个方法论 – 既包括理论层面的分析, 也包括代码层面的工具. 把数据和训练结合, 又衍生出一堆的问题: 数据的配比, 不同类型数据的格式问题, 训练时的输入顺序等. </li>
+<li><strong>评估</strong>: 测试的形式是优化目标, 然而目标集的定义始终是值得商榷的 (or 理想下是时刻进化的). 简言之, 需要考虑评估什么, 如何拆解, 如何设计评估方式等方面. [^1]</li>
+</ol>
+<p>[C] 个人感想</p>
+<ol>
+<li>此前对于数据的理解是间接的, 无非以为数据是时间&#x2F;人力&#x2F;成本的累积; 然而即使遇到一个非常简单的问题 (对话场景), 一个理想的 “答案” (尽管实际上没有标准答案) 依然是模糊和困难的. 需要数据负责人的直觉乃至天才. <ol>
+<li>e.g. 如何 “激发用户的对话兴趣”? 如何 “说得更像人去除 assistant 感”? 这时才想到, 相较于做一个 “工具” 我们仅仅关心结果的正确性, 当我们把人性纳入到考虑的范围内时, 复杂性一下子就生长了. </li>
+<li>关联: 模型和产品. 这种时候, 突然理解的 “产品” 的价值, 产品经理一定要是有洞见且内心强大的, 能够带领明晰的方向, 讲好完整的故事. [^2]</li>
+<li>拓展: 如何看待以 GPT 为代表的语言模型? 它们在多大程度上类似一个人? 心智? 我们是否对于模型有过高的期待和想象了? RL 可以赋予模型怎样的能力&#x2F;性格?</li>
+</ol>
+</li>
+<li>宏观来讲, 评估应该是第一性的, 是任务定义乃至价值界定的起点. [^3] 评估和数据的差异在于, 前者是目的, 后者是手段. <ol>
+<li>评估的重要性是显见的, 它是人的期望&#x2F;价值偏好的直接体现, 更务实一些, 也是对产品的直接关联. </li>
+<li>评估也是困难的. 1) 对于某一特定任务, 评估目标和任务目标的关联性; 2) 面对多样的用户, 要求评估的全面性 (OOD); 3) 对话等交互方式, 要求了模型能够应对一些 corner case; 4) LLM 通用推理能力的保持. </li>
+<li>更大地来讲, 作为人也免不了会有主观偏好, 乃至价值观上的冲突. 凡此种种, 使得评估是又一大问题, 在此先避过.</li>
+</ol>
+</li>
+<li>数据和模型的关系. <ol>
+<li>听到的说法有, LLM 是对于数据的压缩. 无论从训练流程还是实际推理的表现, 这一点都颇有道理; </li>
+<li>到微调阶段, 数据对于模型的影响是更直接的. 此时需要关心的是, 数据之间的冲突, 以及它们对于模型的影响问题; </li>
+<li>数据的作用是什么? 在什么场景下是同模型有协同性的? 似乎理想的设置是带噪声的输入和一致性的输出逻辑, 然而这一点如何保证? </li>
+<li>模型作为应用需要平衡不同人的价值, 在作为主体的人决定了模型训练过程中的数据; 换言之, 特定的模型体现的是模型生产者的价值; 那么如果我们承认模型对于人的影响是持续且深入的, 那么这种价值观的公正性如何保证?  (又见 EP01 提到的技术平权问题) [^4]</li>
+</ol>
+</li>
+</ol>
+<p>2024.11.19</p>
+<p>[^1]: 遇到审稿人质疑 “LLM 模拟用户的合理性”, 和 “评估的准确性” 这一问题是相关的.<br>[^2]: 上述讨论, “数据” 一词其实包含了 demo&#x2F;corpus 的意涵, 但两者 (理想情况下) 本来就是同质的, 仅仅是在功能上的区分.<br>[^3]: 接受这一观点, 应该是 from Li Mu.<br>[^4]: 听到一个 rumor: 体感上的 GPT “降智”, 可能和接入的 IP 相关 – 一下子就恐怖故事起来. </p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>Author: </span><span class="post-copyright-info"><a href="https://lightblues.github.io/blog">Easonshi</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>Link: </span><span class="post-copyright-info"><a href="https://lightblues.github.io/blog/posts/f6a33ed0/">https://lightblues.github.io/blog/posts/f6a33ed0/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>Copyright Notice: </span><span class="post-copyright-info">All articles on this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless otherwise stated.</span></div></div><div class="tag_share"><div class="post-share"><div class="social-share" data-image="https://cloud.easonsi.site/img/GhostBlade-WLOP/ghost-blade-00004.jpg" data-sites="facebook,x,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related" href="/blog/posts/81a40e46/" title="EP03: 科学, 哲学, 与AGI"><img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud.easonsi.site/img/GhostBlade-WLOP/ghost-blade-00002.jpg" onerror="onerror=null;src='https://cloud.easonsi.site/img/_meta/404_image.png'" alt="cover of previous post"><div class="info"><div class="info-1"><div class="info-item-1">Previous</div><div class="info-item-2">EP03: 科学, 哲学, 与AGI</div></div><div class="info-2"><div class="info-item-1">  人与人的谈话需要有限度, 毫无边界的话题延伸容易带来低效的沟通乃至负向交流.     Tao at the age of 10 with mathematician Paul Erdős in 1985. [from wiki]  原本想展开的topic是科幻, 参与了一场关于科学哲学的分享, 不妨就先从科学说起.   (科学是什么) 首先的问题在于, 不同人&#x2F;群体眼中的 “科学” 是不一样的. 生活在这片土地的我们这一代人, 难免会接受到 “科学技术是第一生产力” 的观点; 可能生活在原始部落的人们, 尚不知道科学为何物; 乃至神学的信徒可能视科学不过愚人的玩物… 对于概念的理解, 受到时间, 地点, 学识, 信仰等各种因素的参杂.  (什么是大众想象中的科学) 那就只能从一般的, 普罗大众所理解的 “科学” 讲起了, 或者说, 存在于群众想象中的科学的模样.[^1] 参考主持人的预设, 首先一定是精确可信赖的, 并且可能是沿着既有的路线稳态上升的 (这种对于大众认知的想象当然是存疑的, 在此不做展开) – 权威性, 科学进步论.  (科学是连续进展的吗) 于是,...</div></div></div></a><a class="pagination-related" href="/blog/posts/6faa6f6a/" title="EP01: 走在奔赴三十的路上"><img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud.easonsi.site/img/cosmos/cosmos-00010.jpg" onerror="onerror=null;src='https://cloud.easonsi.site/img/_meta/404_image.png'" alt="cover of next post"><div class="info text-right"><div class="info-1"><div class="info-item-1">Next</div><div class="info-item-2">EP01: 走在奔赴三十的路上</div></div><div class="info-2"><div class="info-item-1">  写在生活初揭开面纱    Barred Spiral Galaxy NGC 1672 欧空局公布一张哈勃太空望远镜拍摄的剑鱼座「NGC 1672」星系照片。这是一个距离地球约4900万光年的棒旋星系，直径约7.5万光年，分布着数十亿颗恒星，星系旋臂上的明亮红点是新诞生的恒星。[from iDaily]   [A] 起因是近期种种 – 身体上的, 情感上的, 工作上的, 生活上的, 智识上的… 太多变化和不变, 终于在一个情理之中的时刻带着不由分说的力量裹挟着你前进. 你终于意识到, 有些生命之中必须面对的, 逃不掉的东西 – 是时候直视它了.  突然, 你意识到三十是一个没有那么遥远的数字了. 三十岁, 是什么? 你还可以肆意造作自己的身体吗? 你在多大程度上享有着自由? 有什么事业你以为崇高值得去奉献? 你的价值排序是否构建又将作何演化?生活渐次向你展开真实又广阔的一面, 生命在你眼前又如此笼罩这迷雾. 选择成为越来越重要的事项, 责任化作切实的模样伫立在眼前. 世界之大, 生命之大; 快乐之多, 遗憾之多.  (停止你漫无目的的故作惆怅吧, 你这个本质上无可救药的乐天派!...</div></div></div></a></nav><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> Comments</span></div><div class="comment-switch"><span class="first-comment">Livere</span><span id="switch-btn"></span><span class="second-comment">Disqus</span></div></div><div class="comment-wrap"><div><div id="lv-container" data-id="city" data-uid="MTAyMC81MTk1NS8yODQzNg"></div></div><div><div id="disqus_thread"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud.easonsi.site/img/_meta/avatar.jpg" onerror="this.onerror=null;this.src='https://cloud.easonsi.site/img/_meta/404_image.png'" alt="avatar"/></div><div class="author-info-name">Easonshi</div><div class="author-info-description">Neo learner</div><div class="site-data"><a href="/blog/archives/"><div class="headline">Articles</div><div class="length-num">16</div></a><a href="/blog/tags/"><div class="headline">Tags</div><div class="length-num">17</div></a><a href="/blog/categories/"><div class="headline">Categories</div><div class="length-num">2</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Lightblues"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/Lightblues" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:oldcitystal@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="/blog/atom.xml" target="_blank" title="RSS"><i class="fa fa-rss"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">🎉 note 试营业</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Posts</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/blog/posts/81a40e46/" title="EP03: 科学, 哲学, 与AGI"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud.easonsi.site/img/GhostBlade-WLOP/ghost-blade-00002.jpg" onerror="this.onerror=null;this.src='https://cloud.easonsi.site/img/_meta/404_image.png'" alt="EP03: 科学, 哲学, 与AGI"/></a><div class="content"><a class="title" href="/blog/posts/81a40e46/" title="EP03: 科学, 哲学, 与AGI">EP03: 科学, 哲学, 与AGI</a><time datetime="2024-12-04T08:22:25.000Z" title="Created 2024-12-04 16:22:25">2024-12-04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/blog/posts/f6a33ed0/" title="EP02: 简谈数据与模型"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud.easonsi.site/img/GhostBlade-WLOP/ghost-blade-00004.jpg" onerror="this.onerror=null;this.src='https://cloud.easonsi.site/img/_meta/404_image.png'" alt="EP02: 简谈数据与模型"/></a><div class="content"><a class="title" href="/blog/posts/f6a33ed0/" title="EP02: 简谈数据与模型">EP02: 简谈数据与模型</a><time datetime="2024-12-04T08:21:11.000Z" title="Created 2024-12-04 16:21:11">2024-12-04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/blog/posts/6faa6f6a/" title="EP01: 走在奔赴三十的路上"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud.easonsi.site/img/cosmos/cosmos-00010.jpg" onerror="this.onerror=null;this.src='https://cloud.easonsi.site/img/_meta/404_image.png'" alt="EP01: 走在奔赴三十的路上"/></a><div class="content"><a class="title" href="/blog/posts/6faa6f6a/" title="EP01: 走在奔赴三十的路上">EP01: 走在奔赴三十的路上</a><time datetime="2024-12-04T08:18:46.000Z" title="Created 2024-12-04 16:18:46">2024-12-04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/blog/posts/a2121cb8/" title="关于电子情绪价值"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud.easonsi.site/img/Ukiyo-e/ukiyo-e-00006.jpg" onerror="this.onerror=null;this.src='https://cloud.easonsi.site/img/_meta/404_image.png'" alt="关于电子情绪价值"/></a><div class="content"><a class="title" href="/blog/posts/a2121cb8/" title="关于电子情绪价值">关于电子情绪价值</a><time datetime="2024-07-18T05:17:34.000Z" title="Created 2024-07-18 13:17:34">2024-07-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/blog/posts/8214ab05/" title="沙地行记"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud.easonsi.site/img/Fate/fate-00009.jpg" onerror="this.onerror=null;this.src='https://cloud.easonsi.site/img/_meta/404_image.png'" alt="沙地行记"/></a><div class="content"><a class="title" href="/blog/posts/8214ab05/" title="沙地行记">沙地行记</a><time datetime="2024-05-07T09:19:36.000Z" title="Created 2024-05-07 17:19:36">2024-05-07</time></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2021 - 2026 By Easonshi</span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Reading Mode"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="Toggle Between Traditional and Simplified Chinese">繁</button><button id="darkmode" type="button" title="Toggle Between Light and Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle Between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Settings"><i class="fas fa-cog fa-spin"></i></button><a id="to_comment" href="#post-comment" title="Scroll to Comments"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="Back to Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/blog/js/utils.js?v=5.5.4-b1"></script><script src="/blog/js/main.js?v=5.5.4-b1"></script><script src="/blog/js/tw_cn.js?v=5.5.4-b1"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@19.1.3/dist/lazyload.iife.min.js"></script><div class="js-pjax"><script>(() => {
+  const isShuoshuo = GLOBAL_CONFIG_SITE.pageType === 'shuoshuo'
+
+  const loadLivere = (el, path) => {
+    window.livereOptions = {
+      refer: path || location.pathname
+    }
+
+    if (isShuoshuo) {
+      window.shuoshuoComment.destroyLivere = () => {
+        if (el.children.length) {
+          el.innerHTML = ''
+          el.classList.add('no-comment')
+        }
+      }
+    }
+
+    if (typeof LivereTower === 'object') window.LivereTower.init()
+    else {
+      (function(d, s) {
+          var j, e = d.getElementsByTagName(s)[0];
+          if (typeof LivereTower === 'function') { return; }
+          j = d.createElement(s);
+          j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+          j.async = true;
+          e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    }
+  }
+
+  if (isShuoshuo) {
+    'Livere' === 'Livere'
+      ? window.shuoshuoComment = { loadComment: loadLivere }
+      : window.loadOtherComment = loadLivere
+    return
+  }
+
+  if ('Livere' === 'Livere' || !false) {
+    if (false) btf.loadComment(document.getElementById('lv-container'), loadLivere)
+    else loadLivere()
+  } else {
+    window.loadOtherComment = loadLivere
+  }
+})()</script><script>(() => {
+  const isShuoshuo = GLOBAL_CONFIG_SITE.pageType === 'shuoshuo'
+
+  const disqusReset = conf => {
+    window.DISQUS && window.DISQUS.reset({
+      reload: true,
+      config: conf
+    })
+  }
+
+  const loadDisqus = (el, path) => {
+    if (isShuoshuo) {
+      window.shuoshuoComment.destroyDisqus = () => {
+        if (el.children.length) {
+          el.innerHTML = ''
+          el.classList.add('no-comment')
+        }
+      }
+    }
+
+    window.disqus_identifier = isShuoshuo ? path : '/blog/posts/f6a33ed0/'
+    window.disqus_url = isShuoshuo ? location.origin + path : 'https://lightblues.github.io/blog/posts/f6a33ed0/'
+
+    const disqus_config = function () {
+      this.page.url = disqus_url
+      this.page.identifier = disqus_identifier
+      this.page.title = 'EP02: 简谈数据与模型'
+    }
+
+    if (window.DISQUS) disqusReset(disqus_config)
+    else {
+      const script = document.createElement('script')
+      script.src = 'https://easonshi.disqus.com/embed.js'
+      script.setAttribute('data-timestamp', +new Date())
+      document.head.appendChild(script)
+    }
+
+    btf.addGlobalFn('themeChange', () => disqusReset(disqus_config), 'disqus')
+  }
+
+  const getCount = async() => {
+    try {
+      const eleGroup = document.querySelector('#post-meta .disqus-comment-count')
+      if (!eleGroup) return
+      const cleanedLinks = eleGroup.href.replace(/#post-comment$/, '')
+
+      const res = await fetch(`https://disqus.com/api/3.0/threads/set.json?forum=easonshi&api_key=&thread:link=${cleanedLinks}`,{
+        method: 'GET'
+      })
+      const result = await res.json()
+
+      const count = result.response.length ? result.response[0].posts : 0
+      eleGroup.textContent = count
+    } catch (err) {
+      console.error(err)
+    }
+  }
+
+  if (isShuoshuo) {
+    'Livere' === 'Disqus'
+      ? window.shuoshuoComment = { loadComment: loadDisqus }
+      : window.loadOtherComment = loadDisqus
+    return
+  }
+
+  if ('Livere' === 'Disqus' || !false) {
+    if (false) btf.loadComment(document.getElementById('disqus_thread'), loadDisqus)
+    else {
+      loadDisqus()
+      
+    }
+  } else {
+    window.loadOtherComment = loadDisqus
+  }
+})()</script></div><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="false"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

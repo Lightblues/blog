@@ -1,0 +1,330 @@
+<!DOCTYPE html><html lang="zh" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>赛博漫谈 | 不要问科技给了什么，问它拿走了什么 | Easonshi's Space</title><meta name="author" content="Easonshi"><meta name="copyright" content="Easonshi"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content=" 我不能去憎恨别人，因为我没时间。 ——《生之欲》  无主题漫谈第一期 关于在线生活题源《一天世界》ep79。那便顺着这一期播客的主题，关于 social distance 或者「在线生活」对于人生活方式的影响开始吧。 其中提到，我们大概已经「无法想象没有互联网的生活」。是的，技术所带来的社会..."><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "赛博漫谈 | 不要问科技给了什么，问它拿走了什么",
+  "url": "https://lightblues.github.io/blog/posts/88153aab/",
+  "image": "https://cloud.easonsi.site/img/CowboyBepop/cowboy-bepop-00004.jpg",
+  "datePublished": "2021-11-21T21:03:57.000Z",
+  "dateModified": "2026-01-19T08:24:05.758Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Easonshi",
+      "url": "https://lightblues.github.io/blog"
+    }
+  ]
+}</script><link rel="shortcut icon" href="https://cloud.easonsi.site/img/_meta/favicon.ico"><link rel="canonical" href="https://lightblues.github.io/blog/posts/88153aab/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin=""/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="baidu-site-verification" content="code-5Y8by4jIW3"/><link rel="manifest" href="/blog/null"/><link rel="apple-touch-icon" sizes="180x180" href="/blog/pwa/apple-touch-icon.png"/><link rel="icon" type="image/png" sizes="32x32" href="/blog/pwa/32.png"/><link rel="icon" type="image/png" sizes="16x16" href="/blog/pwa/16.png"/><link rel="mask-icon" href="/blog/pwa/safari-pinned-tab.svg" color="#5bbad5"/><link rel="stylesheet" href="/blog/css/index.css?v=5.5.4-b1"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          const mediaQueryDark = window.matchMedia('(prefers-color-scheme: dark)')
+          const mediaQueryLight = window.matchMedia('(prefers-color-scheme: light)')
+
+          if (theme === undefined) {
+            if (mediaQueryLight.matches) activateLightMode()
+            else if (mediaQueryDark.matches) activateDarkMode()
+            else {
+              const hour = new Date().getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            mediaQueryDark.addEventListener('change', () => {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else {
+            theme === 'light' ? activateLightMode() : activateDarkMode()
+          }
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?07cc68228b5c4f4b4d49b36c1d3656c0";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+btf.addGlobalFn('pjaxComplete', () => {
+  _hmt.push(['_trackPageview',window.location.pathname])
+}, 'baidu_analytics')
+</script><script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-155100419-1"></script><script>window.dataLayer = window.dataLayer || []
+function gtag(){dataLayer.push(arguments)}
+gtag('js', new Date())
+gtag('config', 'UA-155100419-1')
+btf.addGlobalFn('pjaxComplete', () => {
+  gtag('config', 'UA-155100419-1', {'page_path': window.location.pathname})
+}, 'google_analytics')
+</script><script>const GLOBAL_CONFIG = {
+  root: '/blog/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: 'Copy Successful',
+    error: 'Copy Failed',
+    noSupport: 'Browser Not Supported'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just now',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.12.0/dist/infinitegrid.min.js',
+    buttonText: 'Load More'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: true,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '赛博漫谈 | 不要问科技给了什么，问它拿走了什么',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/blog/atom.xml" title="Easonshi's Space" type="application/atom+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud.easonsi.site/img/_meta/avatar.jpg" onerror="this.onerror=null;this.src='https://cloud.easonsi.site/img/_meta/404_image.png'" alt="avatar"/></div><div class="site-data text-center"><a href="/blog/archives/"><div class="headline">Articles</div><div class="length-num">16</div></a><a href="/blog/tags/"><div class="headline">Tags</div><div class="length-num">17</div></a><a href="/blog/categories/"><div class="headline">Categories</div><div class="length-num">2</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://notes.easonsi.site/"><i class="fa-fw fas fa-sticky-note"></i><span> Notes</span></a></div><div class="menus_item"><a class="site-page" href="/blog/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/blog/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/blog/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/blog/gallery/"><i class="fa-fw fas fa-images"></i><span> Galleries</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-heart"></i><span> About</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/blog/about/"><i class="fa-fw fas fa-address-card"></i><span> About</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(https://cloud.easonsi.site/img/CowboyBepop/cowboy-bepop-00004.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/blog/"><span class="site-name">Easonshi's Space</span></a><a class="nav-page-title" href="/blog/"><span class="site-name">赛博漫谈 | 不要问科技给了什么，问它拿走了什么</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  Back to Home</span></span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://notes.easonsi.site/"><i class="fa-fw fas fa-sticky-note"></i><span> Notes</span></a></div><div class="menus_item"><a class="site-page" href="/blog/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/blog/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/blog/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/blog/gallery/"><i class="fa-fw fas fa-images"></i><span> Galleries</span></a></li></ul></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-heart"></i><span> About</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/blog/about/"><i class="fa-fw fas fa-address-card"></i><span> About</span></a></li></ul></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">赛博漫谈 | 不要问科技给了什么，问它拿走了什么</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2021-11-21T21:03:57.000Z" title="Created 2021-11-22 05:03:57">2021-11-22</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2026-01-19T08:24:05.758Z" title="Updated 2026-01-19 16:24:05">2026-01-19</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/blog/categories/Meta/">Meta</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">Word Count:</span><span class="word-count">2.9k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">Reading Time:</span><span>8mins</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post Views:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><blockquote>
+<p>我不能去憎恨别人，因为我没时间。 ——《生之欲》</p>
+</blockquote>
+<p>无主题漫谈第一期</p>
+<h2 id="关于在线生活"><a href="#关于在线生活" class="headerlink" title="关于在线生活"></a>关于在线生活</h2><p>题源《一天世界》ep79。那便顺着这一期播客的主题，关于 social distance 或者「在线生活」对于人生活方式的影响开始吧。</p>
+<p>其中提到，我们大概已经「无法想象没有互联网的生活」。是的，技术所带来的社会发展往往是不可逆的，接受某种生活方式的同时意味着对于过去所习以为常的作息的诀别，再回首已是积重难返。电力、燃油、通讯、屏幕……当一项技术成为「基础设施」浇筑在日常生活中，过去的被替代者成为真正或美好或不的昨日世界。能够取代的，或许只能是时代浪潮的下一次变革。</p>
+<p>当然，我不是否认「独身自好」的可能性，在哪一个年代我们都不能忽视那些「至今不用手机」「不接触互联网」的人们 —— 或是时代淘沙，或是思想家，或是行为艺术；同样不可否认的是这种诀别所带来的可能的快乐与满足。然而，这样的生活方式终归只是少数派，这里涉及的是总体论上对于社会心理的影响。</p>
+<p>那么，作为现今生活底层结构的「互联网」，对于我们的世界产生了怎样的改变？这自然是大之又大的话题，联网是 Tim Berners-Lee 那一代人的想象还是现今璀璨着的「移动互联网」？是互联互通所带来的信息生产和流程的极大变革，乃至对于全球化及其所带来的各式后遗症？</p>
+<p>还是从小出发吧，如播客中提到的，「后疫情」时代，对于口罩、洗手的观念、乃至「洁癖」的定义都会产生持久的变化，而「911」所带来的公众隐私领域的缩减也是几乎不可逆的；公众事件的影响如此，而塑造了生活方式的互联生活，对于社会状态和心理的影响同样是巨大且不可悖逆的。</p>
+<p>正如「线上生活」，九十年代关于互联网的想象绝对不会如现在这般；无所谓悲哀或庆幸，那个电脑上可爱企鹅的滴滴滴声变成了桌面上呜呜的震动，坐在案前构思着邮件内容的身影变成了一块四五寸屏幕上翻飞的手指，下载一张图片还要几分钟的等待变成了4K直播无延迟。不仅是疫情隔离所带来的被迫线上生活，我们逐渐习惯了 online 的生活，接入网络的价值甚至和加入世贸类似，与世界建立起了连接；如今，大概断水断电所带来的焦虑都赶不上断网。</p>
+<p>起了这样一个大而泛的题，自知没有能力驾驭，尝试去探讨，大抵是希望给后续的话题画个界限，警醒不要再拘泥于技术的细枝末节中，更要去反思互联网&#x2F;技术的多面性，反观当下的生活。无法也无意拒绝互联生活的，但意识到「在线上生活的同时存在着线下的可能性」这一点就有其意义。</p>
+<p>昨夜风雨，银杏一地落黄。</p>
+<h2 id="关于科技带来的"><a href="#关于科技带来的" class="headerlink" title="关于科技带来的"></a>关于科技带来的</h2><p>自诩算是个科技圈编外人员 —— 汲汲于科技带来的可能性，对于「未来生活方式」的热望，而所谓「编外」，自然是尚不得其门而入，游离徘徊而已。因此，总归是技术乐观主义的。然而，在宣告着「技术无罪论」的同时，也不得不承认着其可能的影响 —— 现实层面，无论是父母辈对于手机乃至游戏的反向依恋，还是微博或「朋友圈」所带来的社交压力乃至厌倦，或图像、音视频伪造技术所可能带来的社会隐患，对了，还有已成为社会热议的人工智能伦理、自动驾驶伦理等。</p>
+<p>所以，更准确的表述&#x2F;期待，应该是：在理解技术基本原理的前提下，信仰技术所能带来的改变。是以，对自己的期待是在「沉迷」某一技术之前，先对其实现细节有一定的认知基础。当然，这样的期待切实去实现的几乎不可能 —— 在学科严重细分、「博学家」早已不复的年代。毕竟技术的底层是难以穷尽的，完全个人维护的软件几乎是神话，芯片和计算机的制造早已不是一家公司可以实现的，更不必说自己早知与物理无缘。</p>
+<p>这种期待的可能性在于开放的文档体系，在于自由的开源社区，在于互联网作为资源网络本身。技术在商用、商品化的过程中，必然是满足了人的某种惰性，提供便利的同时必然做了大量的简化；但这样高层封装掩盖了大量的实现细节；这种细节或许大多无关紧要，但总有少数的核心思想是无可逃脱的。沉沦水面之上的功用纵然简单，但不能忽视盲目 addict 技术的危险性，底层原理的认知缺失，很容易让人相信那些神奇黑箱，甚至忽视基本常识，无知者最无畏。</p>
+<p>有「圈外」人员提到对于「科技圈」的印象，会有圈地自萌的厌恶感。这样的反感自有其原因 —— 直接观感，或许是论坛社区三句不离「01编程」「徒手造芯片」的段子手，或许是诚心发问被一句「linux大法好」、询问IDE配置却被推荐 Vim Emacs 的憋屈。然而，这些绝非我所想象的疆界，大抵不过如我这般编外人员的叫嚣。另一方面，却不得不承认「入圈」的门槛，确实存在着一定的 threshold —— 又来了，首先要过的一堆的专业名词。然而，所谓「圈」总有其入圈代价，而技术圈层的优势在于其无与伦比的开放性，互联网之处本身就有着先天的技术属性，在合理搜索的情况下你几乎可以零成本得到所有问题的答案，所需要的只有时间和精力。</p>
+<p>自然，编外无权为其代言，把技术作为手段而非目的，在有着基础认知的前提下勇于去拥抱技术创新，是目前的期许 —— 非但计算机相关，生活的一切领域又何尝不是如此？</p>
+<h2 id="关于信息与奴役"><a href="#关于信息与奴役" class="headerlink" title="关于信息与奴役"></a>关于信息与奴役</h2><p>再谈谈技术所带来的观念上的转变。节目中提到，一个显见的概念是「对于孤独的忍耐力」，诚然，和一个十八世纪的人比起来，现代人对于孤独的忍耐大概总是要差很多的。</p>
+<p>不谈「孤独」，直接看更为具体的「信息」吧。除去人作为生物的基本需求，我们的一切娱乐形式几乎能够在数字世界上找到替代品。图像、音频、视频，乃至感官、虚拟、增强现实或是近期火热的「Metaverse」…… 技术革新也好炒作也罢，未来的方向，人类似乎可以在虚拟世界作为全然精神体存在。如果虚拟的感官和生物性的神经反应无限接近乃至等价实现，诱惑于人工构造的虚拟世界的无穷可能性（毕竟据说国族&#x2F;民族的概念也是虚构的），我们有多大的把握抵抗这魅？</p>
+<p>我想是悲观的，小说、电影、游戏无不是刺激着我们的神经，而网络&#x2F;虚拟世界所带来的快感无疑是更为多元的。近期学游泳，在水中跳动的自由已经让二十年陆地生物无比兴奋，第二人生中御剑飞行太空漫游的可能性足够让人高潮。</p>
+<p>扯远了，总言之，一切皆为信息，我们在与世界交互的过程中吞吐着信息。作为信息的消费者，我们似乎有选取信息源的「自由」，如我们冲浪过程中漫游在这一切实的网络中；作为信息的生产者，除了有意识的信息生产，正如那句「隐私不上网，上网无隐私」我们在这一虚拟网络中时时刻刻留下自身足迹。兴奋于交互媒介所带来的可能性的同时，我们对于这现世还有何眷恋？</p>
+<p>对于技术的想象大多是幻想，人与人国与国的冲突无时无刻不彰显着人作为一个自然生物的复杂性。扯下「技术无国界」的遮羞布，技术专利的占有、盈利为目的的产品远高于理想主义的构建；这些尚不可怕，让人恐惧的是技术作为「权力」的可能性 —— 当使用微信成为乘坐地铁的前提条件的时候，我们真的有去选择红色药丸的可能吗？</p>
+<p>所以，我们在痛骂着苹果或微信生态的封闭与独断的同时不得不用着它们的设备与服务，带着镣铐的舞蹈（然而，固执良久之后，我终于还是承认 Apple 是一家「伟大」的公司）。</p>
+<p>大体，恐惧有二：对于隐私的恐惧，大概是所谓「监控资本主义」；对于推送的恐惧，「信息茧房」或者是经典的「兔子洞」比喻。</p>
+<p>所以无论是对于推荐算法的投喂，互联网巨头对于隐私的态度，还是各种 App 使用人数&#x2F;时间优先的指标，乃至各种平台「数据为王」的现状，都让人产生警惕并引发讨论。这种恐惧是切实的，隐私为代价的精准推荐、切合生物本能的信息推流，自己也多在与其的抗衡中忽上忽下沉沦不定。有时，感觉自己是信息流水线上的一颗处理器，被动接收机械输出。</p>
+<p>克服奴役之路在哪里？似乎又回到了之前的答案：用技术对抗技术。例如对抗推流，如何拿回信息的控制权？有着复兴趋势的 RSS 技术仍有热度 —— 订阅的意义在于，将信息的来源从平台&#x2F;团队重归个人；此外，对于公众号等封闭生态的突破提供了点对点的可控信息流动。</p>
+<p>似乎又有圈内人士的清高与自傲了？还是那句「技术只是手段」，fancy 的信息流绝非唯一的出路，「折腾」所带来的便利性要与日常的使用与反思所协调。互联网将我们获取信息的困难程度减小到了最低，但并不意味着我们获取信息的质量有保障，更不意味着互联网是信息的唯一途径。</p>
+<p>—— 不要问科技给了什么，问它拿走了什么。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>Author: </span><span class="post-copyright-info"><a href="https://lightblues.github.io/blog">Easonshi</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>Link: </span><span class="post-copyright-info"><a href="https://lightblues.github.io/blog/posts/88153aab/">https://lightblues.github.io/blog/posts/88153aab/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>Copyright Notice: </span><span class="post-copyright-info">All articles on this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless otherwise stated.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/blog/tags/%E7%BD%91%E7%BB%9C/">网络</a><a class="post-meta__tags" href="/blog/tags/%E6%BC%AB%E6%B8%B8/">漫游</a><a class="post-meta__tags" href="/blog/tags/%E9%9A%90%E7%A7%81/">隐私</a></div><div class="post-share"><div class="social-share" data-image="https://cloud.easonsi.site/img/CowboyBepop/cowboy-bepop-00004.jpg" data-sites="facebook,x,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related full-width" href="/blog/posts/511ce731/" title="赛博漫谈 | 媒介即隐喻 媒介即认知"><img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud.easonsi.site/img/SamuraiChamploo/samurai-champloo-00010.jpg" onerror="onerror=null;src='https://cloud.easonsi.site/img/_meta/404_image.png'" alt="cover of previous post"><div class="info"><div class="info-1"><div class="info-item-1">Previous</div><div class="info-item-2">赛博漫谈 | 媒介即隐喻 媒介即认知</div></div><div class="info-2"><div class="info-item-1"> But remenber, please, the Law by which we live, wer are not built to comprehend a lie.但是, 请记住我们存活的法则, 我们被造出来, 可不能理解谎言.——The Secret of the Machines, BY RUDYARD KIPLING, 摘自《我这样的机器》  于是, 免不了谈到「媒介」 —— 作为形式, 作为技术, 作为手段; 作为包围着现代生活的方方面面, 作为人际沟通的方式, 作为我们对于世界的想象. 媒介即信息逃不掉麦克卢汉那句「媒介及信息」(The medium is the message, Understanding Media: The Extensions of Man, 1964). 简言之, 传播内容受到传播形式的影响. 自然, 这里的媒介无非是六十年代的那几样, 文字、电报、图片、电影 —— 作为前互联网时代的观察, 当时的媒介形态相较于今还算简单; 然而从媒介的物理形态而言, 却也覆盖了生物的多数感官.  最近才读那本畅销书《娱乐至死》, 波兹曼进一步补充...</div></div></div></a></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>Related Articles</span></div><div class="relatedPosts-list"><a class="pagination-related" href="/blog/posts/511ce731/" title="赛博漫谈 | 媒介即隐喻 媒介即认知"><img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud.easonsi.site/img/SamuraiChamploo/samurai-champloo-00010.jpg" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2021-11-28</div><div class="info-item-2">赛博漫谈 | 媒介即隐喻 媒介即认知</div></div><div class="info-2"><div class="info-item-1"> But remenber, please, the Law by which we live, wer are not built to comprehend a lie.但是, 请记住我们存活的法则, 我们被造出来, 可不能理解谎言.——The Secret of the Machines, BY RUDYARD KIPLING, 摘自《我这样的机器》  于是, 免不了谈到「媒介」 —— 作为形式, 作为技术, 作为手段; 作为包围着现代生活的方方面面, 作为人际沟通的方式, 作为我们对于世界的想象. 媒介即信息逃不掉麦克卢汉那句「媒介及信息」(The medium is the message, Understanding Media: The Extensions of Man, 1964). 简言之, 传播内容受到传播形式的影响. 自然, 这里的媒介无非是六十年代的那几样, 文字、电报、图片、电影 —— 作为前互联网时代的观察, 当时的媒介形态相较于今还算简单; 然而从媒介的物理形态而言, 却也覆盖了生物的多数感官.  最近才读那本畅销书《娱乐至死》, 波兹曼进一步补充...</div></div></div></a><a class="pagination-related" href="/blog/posts/70447ef0/" title="赛博漫谈 | 媒介视角下的元宇宙冷思考"><img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud.easonsi.site/img/EVA/eva-00003.jpg" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2021-12-15</div><div class="info-item-2">赛博漫谈 | 媒介视角下的元宇宙冷思考</div></div><div class="info-2"><div class="info-item-1">「元宇宙」概念早已烂熟于大街小巷, 然而关于它究竟是什么, 却少有人真正说得清; 作为一个八字还没一撇的未来幻想, 可以说一千个人里就有一千种的 Metaverse. 那么为何要再去谈它? 首先, 自然是因其火热, 因其模糊性. 然而, 激发我兴趣的更在于公众讨论这一现象本身. 正如一档播客中所言, 细想互联网时代 (或者更准确地说, 移动互联网时代) 以来, 我们很少再有全民对于未来世界进行的公众讨论了. 反思现在的社会生活, 我们几乎不得不承认, 当前世界的生活样态是完全围绕互联网展开的. 在互联网作为甚至比水电更为重要的基础设施的当下, 我们似乎无法想象一个没有「网」的世界; 而伴随着对于不久远过去的记忆的丧失, 我们似乎也丧失对于未来世界的想象, 历史终结于互联网. 从这一点来看, 「元宇宙」这一概念破圈成为街头巷尾热议的话题, 激发了普罗大众对于未来的广泛讨论和想象, 这一文化现象本身就值得讨论. 回望互联网刚刚兴起的那段时间, 那时候瀛海威时空广告词中用的还是「信息高速公路」, 那时候的人们形容访问互联网的行为是「网上冲浪」, 从这些埋进历史的故纸堆的词汇当中, 我们...</div></div></div></a><a class="pagination-related" href="/blog/posts/8cedf62b/" title="赛博漫谈 | What a wonderful world"><img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud.easonsi.site/img/Ukiyo-e/ukiyo-e-00010.jpg" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2021-12-04</div><div class="info-item-2">赛博漫谈 | What a wonderful world</div></div><div class="info-2"><div class="info-item-1"> 您那小小的歌唱着的鸟儿，即将飞向远方了。夜莺请一直往南走吧，到暖和的地方去生活。——《扬名立万》  于是今年大概是所谓「播客元年」, 即使每一年是太多事物的元年也见证了多少泡沫的破碎; 但当看到网易云和QQ音乐不惜在底部栏新增一个「播客」页面, 终于意识到播客成了互联网流量巨头新的宠儿.  实际上, 播客这一形式早已不新鲜, 不鸟万先生的《IT公论》开播自2013年11月, 而 Apple Podcast 从 iTunes 独立出来则是 2012年, 更不用提英文世界中的媒介尝试和发展历史.  那么何为播客, 为何又要谈播客? 播客何为Wiki 告诉我, 播客 「是一种数字媒体，指一系列的音频、视频、在线电台或文字以列表形式经互联网发布，听众可下载或串流当中的文件以欣赏」「播客创作者将音频或视频上传至RSS或在线播客平台，听众或观众则通过软件获取节目更新」.  播客为何? 数字音频, 支持下载或者流播, 从媒介上看几乎和音乐或脱口秀节目差不了多少; 而从内容和交互形式来看, 又何传统电台神似, 无非媒介从无线电波转为网络. 那是什么赋予了「播客」区分于音乐、广播、视频等其他媒介...</div></div></div></a><a class="pagination-related" href="/blog/posts/92983cd0/" title="赛博漫谈 | git 作为方法"><img class="cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud.easonsi.site/img/GhostBlade-WLOP/ghost-blade-00009.jpg" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2022-08-26</div><div class="info-item-2">赛博漫谈 | git 作为方法</div></div><div class="info-2"><div class="info-item-1"> 我已经不再知道些什么, 也不在乎, 而且不认为这有什么要紧的, 而突然间, 我感到了真正的自由. —— 杰克凯鲁亚克, from MONO 0817日签  仍然相关过分伸展的欲望… 文笔颓唐, 但我还要说自己是个无可救药的乐天派.  记录的欲望纯然的秩序是美, 如置景规范的相片, 如烟雨纷纷的飞雪. 所以秩序存在着一定的吸引力, 整理是一种天然的欲望.  没有打理卫生的决心, 但能鸠占鹊巢还是向往整洁的环境的. 适度的强迫症或洁癖值得钦佩, 虽然对个人而言行动的决心抵不过身体的惰性.   from 隐入尘烟  惰性人人有之, 据说还是生产力进步的原动力, 似乎还没那么糟糕. 如何借工具来填补惰性? 所谓科学方法论.  缺乏实在的行动力, 但川水东流若留不下些许印记总还是过分虚无了; 是以, 退而求之于记录的欲望. 「记录」, 是秦皇汉武的丰功伟绩, 是传道授业的细水长流, 是私密阴幽的私人日记.  诉诸记录, 因为个体性没有那么坚强; 用数量作标尺, 给自己交上答卷; 来掩盖眼睛里的空洞, 走在那阳关大道抵御寒冷.  诉诸记录, 也因记忆的淡薄. 一方面是回忆的不可靠, 另一方...</div></div></div></a></div></div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> Comments</span></div><div class="comment-switch"><span class="first-comment">Livere</span><span id="switch-btn"></span><span class="second-comment">Disqus</span></div></div><div class="comment-wrap"><div><div id="lv-container" data-id="city" data-uid="MTAyMC81MTk1NS8yODQzNg"></div></div><div><div id="disqus_thread"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud.easonsi.site/img/_meta/avatar.jpg" onerror="this.onerror=null;this.src='https://cloud.easonsi.site/img/_meta/404_image.png'" alt="avatar"/></div><div class="author-info-name">Easonshi</div><div class="author-info-description">Neo learner</div><div class="site-data"><a href="/blog/archives/"><div class="headline">Articles</div><div class="length-num">16</div></a><a href="/blog/tags/"><div class="headline">Tags</div><div class="length-num">17</div></a><a href="/blog/categories/"><div class="headline">Categories</div><div class="length-num">2</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Lightblues"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/Lightblues" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:oldcitystal@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="/blog/atom.xml" target="_blank" title="RSS"><i class="fa fa-rss"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">🎉 note 试营业</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Contents</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E4%BA%8E%E5%9C%A8%E7%BA%BF%E7%94%9F%E6%B4%BB"><span class="toc-number">1.</span> <span class="toc-text">关于在线生活</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E4%BA%8E%E7%A7%91%E6%8A%80%E5%B8%A6%E6%9D%A5%E7%9A%84"><span class="toc-number">2.</span> <span class="toc-text">关于科技带来的</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E4%BA%8E%E4%BF%A1%E6%81%AF%E4%B8%8E%E5%A5%B4%E5%BD%B9"><span class="toc-number">3.</span> <span class="toc-text">关于信息与奴役</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Posts</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/blog/posts/81a40e46/" title="EP03: 科学, 哲学, 与AGI"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud.easonsi.site/img/GhostBlade-WLOP/ghost-blade-00002.jpg" onerror="this.onerror=null;this.src='https://cloud.easonsi.site/img/_meta/404_image.png'" alt="EP03: 科学, 哲学, 与AGI"/></a><div class="content"><a class="title" href="/blog/posts/81a40e46/" title="EP03: 科学, 哲学, 与AGI">EP03: 科学, 哲学, 与AGI</a><time datetime="2024-12-04T08:22:25.000Z" title="Created 2024-12-04 16:22:25">2024-12-04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/blog/posts/f6a33ed0/" title="EP02: 简谈数据与模型"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud.easonsi.site/img/GhostBlade-WLOP/ghost-blade-00004.jpg" onerror="this.onerror=null;this.src='https://cloud.easonsi.site/img/_meta/404_image.png'" alt="EP02: 简谈数据与模型"/></a><div class="content"><a class="title" href="/blog/posts/f6a33ed0/" title="EP02: 简谈数据与模型">EP02: 简谈数据与模型</a><time datetime="2024-12-04T08:21:11.000Z" title="Created 2024-12-04 16:21:11">2024-12-04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/blog/posts/6faa6f6a/" title="EP01: 走在奔赴三十的路上"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud.easonsi.site/img/cosmos/cosmos-00010.jpg" onerror="this.onerror=null;this.src='https://cloud.easonsi.site/img/_meta/404_image.png'" alt="EP01: 走在奔赴三十的路上"/></a><div class="content"><a class="title" href="/blog/posts/6faa6f6a/" title="EP01: 走在奔赴三十的路上">EP01: 走在奔赴三十的路上</a><time datetime="2024-12-04T08:18:46.000Z" title="Created 2024-12-04 16:18:46">2024-12-04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/blog/posts/a2121cb8/" title="关于电子情绪价值"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud.easonsi.site/img/Ukiyo-e/ukiyo-e-00006.jpg" onerror="this.onerror=null;this.src='https://cloud.easonsi.site/img/_meta/404_image.png'" alt="关于电子情绪价值"/></a><div class="content"><a class="title" href="/blog/posts/a2121cb8/" title="关于电子情绪价值">关于电子情绪价值</a><time datetime="2024-07-18T05:17:34.000Z" title="Created 2024-07-18 13:17:34">2024-07-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/blog/posts/8214ab05/" title="沙地行记"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cloud.easonsi.site/img/Fate/fate-00009.jpg" onerror="this.onerror=null;this.src='https://cloud.easonsi.site/img/_meta/404_image.png'" alt="沙地行记"/></a><div class="content"><a class="title" href="/blog/posts/8214ab05/" title="沙地行记">沙地行记</a><time datetime="2024-05-07T09:19:36.000Z" title="Created 2024-05-07 17:19:36">2024-05-07</time></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2021 - 2026 By Easonshi</span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Reading Mode"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="Toggle Between Traditional and Simplified Chinese">繁</button><button id="darkmode" type="button" title="Toggle Between Light and Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle Between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Settings"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table of Contents"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="Scroll to Comments"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="Back to Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/blog/js/utils.js?v=5.5.4-b1"></script><script src="/blog/js/main.js?v=5.5.4-b1"></script><script src="/blog/js/tw_cn.js?v=5.5.4-b1"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@19.1.3/dist/lazyload.iife.min.js"></script><div class="js-pjax"><script>(() => {
+  const isShuoshuo = GLOBAL_CONFIG_SITE.pageType === 'shuoshuo'
+
+  const loadLivere = (el, path) => {
+    window.livereOptions = {
+      refer: path || location.pathname
+    }
+
+    if (isShuoshuo) {
+      window.shuoshuoComment.destroyLivere = () => {
+        if (el.children.length) {
+          el.innerHTML = ''
+          el.classList.add('no-comment')
+        }
+      }
+    }
+
+    if (typeof LivereTower === 'object') window.LivereTower.init()
+    else {
+      (function(d, s) {
+          var j, e = d.getElementsByTagName(s)[0];
+          if (typeof LivereTower === 'function') { return; }
+          j = d.createElement(s);
+          j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+          j.async = true;
+          e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    }
+  }
+
+  if (isShuoshuo) {
+    'Livere' === 'Livere'
+      ? window.shuoshuoComment = { loadComment: loadLivere }
+      : window.loadOtherComment = loadLivere
+    return
+  }
+
+  if ('Livere' === 'Livere' || !false) {
+    if (false) btf.loadComment(document.getElementById('lv-container'), loadLivere)
+    else loadLivere()
+  } else {
+    window.loadOtherComment = loadLivere
+  }
+})()</script><script>(() => {
+  const isShuoshuo = GLOBAL_CONFIG_SITE.pageType === 'shuoshuo'
+
+  const disqusReset = conf => {
+    window.DISQUS && window.DISQUS.reset({
+      reload: true,
+      config: conf
+    })
+  }
+
+  const loadDisqus = (el, path) => {
+    if (isShuoshuo) {
+      window.shuoshuoComment.destroyDisqus = () => {
+        if (el.children.length) {
+          el.innerHTML = ''
+          el.classList.add('no-comment')
+        }
+      }
+    }
+
+    window.disqus_identifier = isShuoshuo ? path : '/blog/posts/88153aab/'
+    window.disqus_url = isShuoshuo ? location.origin + path : 'https://lightblues.github.io/blog/posts/88153aab/'
+
+    const disqus_config = function () {
+      this.page.url = disqus_url
+      this.page.identifier = disqus_identifier
+      this.page.title = '赛博漫谈 | 不要问科技给了什么，问它拿走了什么'
+    }
+
+    if (window.DISQUS) disqusReset(disqus_config)
+    else {
+      const script = document.createElement('script')
+      script.src = 'https://easonshi.disqus.com/embed.js'
+      script.setAttribute('data-timestamp', +new Date())
+      document.head.appendChild(script)
+    }
+
+    btf.addGlobalFn('themeChange', () => disqusReset(disqus_config), 'disqus')
+  }
+
+  const getCount = async() => {
+    try {
+      const eleGroup = document.querySelector('#post-meta .disqus-comment-count')
+      if (!eleGroup) return
+      const cleanedLinks = eleGroup.href.replace(/#post-comment$/, '')
+
+      const res = await fetch(`https://disqus.com/api/3.0/threads/set.json?forum=easonshi&api_key=&thread:link=${cleanedLinks}`,{
+        method: 'GET'
+      })
+      const result = await res.json()
+
+      const count = result.response.length ? result.response[0].posts : 0
+      eleGroup.textContent = count
+    } catch (err) {
+      console.error(err)
+    }
+  }
+
+  if (isShuoshuo) {
+    'Livere' === 'Disqus'
+      ? window.shuoshuoComment = { loadComment: loadDisqus }
+      : window.loadOtherComment = loadDisqus
+    return
+  }
+
+  if ('Livere' === 'Disqus' || !false) {
+    if (false) btf.loadComment(document.getElementById('disqus_thread'), loadDisqus)
+    else {
+      loadDisqus()
+      
+    }
+  } else {
+    window.loadOtherComment = loadDisqus
+  }
+})()</script></div><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="false"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
