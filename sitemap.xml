@@ -2,105 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://lightblues.github.io/blog/gallery/index.html</loc>
-    
-    <lastmod>2026-01-19</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://lightblues.github.io/blog/gallery/samurai-champloo.html</loc>
-    
-    <lastmod>2026-01-19</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://lightblues.github.io/blog/gallery/ukiyo-e.html</loc>
-    
-    <lastmod>2026-01-19</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://lightblues.github.io/blog/tags/index.html</loc>
-    
-    <lastmod>2026-01-19</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://lightblues.github.io/blog/posts/db8a6271/</loc>
-    
-    <lastmod>2026-01-19</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://lightblues.github.io/blog/posts/e8dd01b4/</loc>
-    
-    <lastmod>2026-01-19</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://lightblues.github.io/blog/posts/8cedf62b/</loc>
-    
-    <lastmod>2026-01-19</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://lightblues.github.io/blog/posts/92983cd0/</loc>
-    
-    <lastmod>2026-01-19</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://lightblues.github.io/blog/posts/88153aab/</loc>
-    
-    <lastmod>2026-01-19</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://lightblues.github.io/blog/posts/511ce731/</loc>
-    
-    <lastmod>2026-01-19</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://lightblues.github.io/blog/posts/70447ef0/</loc>
-    
-    <lastmod>2026-01-19</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://lightblues.github.io/blog/about/index.html</loc>
     
     <lastmod>2026-01-19</lastmod>
@@ -173,7 +74,7 @@
   </url>
   
   <url>
-    <loc>https://lightblues.github.io/blog/posts/8214ab05/</loc>
+    <loc>https://lightblues.github.io/blog/gallery/index.html</loc>
     
     <lastmod>2026-01-19</lastmod>
     
@@ -182,7 +83,7 @@
   </url>
   
   <url>
-    <loc>https://lightblues.github.io/blog/posts/a2121cb8/</loc>
+    <loc>https://lightblues.github.io/blog/gallery/samurai-champloo.html</loc>
     
     <lastmod>2026-01-19</lastmod>
     
@@ -191,7 +92,16 @@
   </url>
   
   <url>
-    <loc>https://lightblues.github.io/blog/posts/2430d599/</loc>
+    <loc>https://lightblues.github.io/blog/gallery/ukiyo-e.html</loc>
+    
+    <lastmod>2026-01-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://lightblues.github.io/blog/tags/index.html</loc>
     
     <lastmod>2026-01-19</lastmod>
     
@@ -246,6 +156,96 @@
   
   <url>
     <loc>https://lightblues.github.io/blog/posts/81a40e46/</loc>
+    
+    <lastmod>2026-01-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://lightblues.github.io/blog/posts/db8a6271/</loc>
+    
+    <lastmod>2026-01-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://lightblues.github.io/blog/posts/e8dd01b4/</loc>
+    
+    <lastmod>2026-01-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://lightblues.github.io/blog/posts/8cedf62b/</loc>
+    
+    <lastmod>2026-01-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://lightblues.github.io/blog/posts/92983cd0/</loc>
+    
+    <lastmod>2026-01-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://lightblues.github.io/blog/posts/88153aab/</loc>
+    
+    <lastmod>2026-01-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://lightblues.github.io/blog/posts/511ce731/</loc>
+    
+    <lastmod>2026-01-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://lightblues.github.io/blog/posts/70447ef0/</loc>
+    
+    <lastmod>2026-01-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://lightblues.github.io/blog/posts/8214ab05/</loc>
+    
+    <lastmod>2026-01-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://lightblues.github.io/blog/posts/a2121cb8/</loc>
+    
+    <lastmod>2026-01-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://lightblues.github.io/blog/posts/2430d599/</loc>
     
     <lastmod>2026-01-19</lastmod>
     
