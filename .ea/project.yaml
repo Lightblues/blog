@@ -1,0 +1,7 @@
+name: blog
+category: output
+origin: original
+scope: personal
+status: active
+stack: [hexo, nodejs, markdown]
+description: Hexo-based personal tech blog (lightblues.github.io/blog)
