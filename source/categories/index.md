@@ -3,7 +3,7 @@ title: Categories
 date: 2021-10-30 12:37:58
 updated: 
 type: "categories"
-top_img: https://cloud.easonsi.site/img/CowboyBepop/cowboy-bepop-00003.jpg
+top_img: https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/CowboyBepop/cowboy-bepop-00003.jpg
 ---
 
 类别

@@ -4,7 +4,7 @@ aside: true
 date: 2021-10-31 02:21:50
 updated:
 description:
-top_img: https://cloud.easonsi.site/img/SamuraiChamploo/samurai-champloo-00001.jpg
+top_img: https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/SamuraiChamploo/samurai-champloo-00001.jpg
 ---
 
 
@@ -15,15 +15,15 @@ from 混沌武士第十二话 温故知新 瑞光和尚
 {% endnote %}
 
 {% gallery %}
-![](https://cloud.easonsi.site/img/SamuraiChamploo/samurai-champloo-00001.jpg)
-![](https://cloud.easonsi.site/img/SamuraiChamploo/samurai-champloo-00002.jpg)
-![](https://cloud.easonsi.site/img/SamuraiChamploo/samurai-champloo-00003.jpg)
-![](https://cloud.easonsi.site/img/SamuraiChamploo/samurai-champloo-00004.jpg)
-![](https://cloud.easonsi.site/img/SamuraiChamploo/samurai-champloo-00005.jpg)
-![](https://cloud.easonsi.site/img/SamuraiChamploo/samurai-champloo-00006.jpg)
-![](https://cloud.easonsi.site/img/SamuraiChamploo/samurai-champloo-00007.jpg)
-![](https://cloud.easonsi.site/img/SamuraiChamploo/samurai-champloo-00008.jpg)
-![](https://cloud.easonsi.site/img/SamuraiChamploo/samurai-champloo-00009.jpg)
-![](https://cloud.easonsi.site/img/SamuraiChamploo/samurai-champloo-00010.jpg)
+![](https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/SamuraiChamploo/samurai-champloo-00001.jpg)
+![](https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/SamuraiChamploo/samurai-champloo-00002.jpg)
+![](https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/SamuraiChamploo/samurai-champloo-00003.jpg)
+![](https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/SamuraiChamploo/samurai-champloo-00004.jpg)
+![](https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/SamuraiChamploo/samurai-champloo-00005.jpg)
+![](https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/SamuraiChamploo/samurai-champloo-00006.jpg)
+![](https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/SamuraiChamploo/samurai-champloo-00007.jpg)
+![](https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/SamuraiChamploo/samurai-champloo-00008.jpg)
+![](https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/SamuraiChamploo/samurai-champloo-00009.jpg)
+![](https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/SamuraiChamploo/samurai-champloo-00010.jpg)
 
 {% endgallery %}

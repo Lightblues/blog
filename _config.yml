@@ -177,7 +177,7 @@ douban:
     quote: "The thousand faces of the world..."
     meta: true
     comments: true
-    top_img: https://cloud.easonsi.site/img/Ukiyo-e/ukiyo-e-00007.jpg
+    top_img: https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/Ukiyo-e/ukiyo-e-00007.jpg
     aside: true
     path: books
     limit:
@@ -186,7 +186,7 @@ douban:
     quote: "且将新火试新茶"
     meta: true
     comments: true
-    top_img: https://cloud.easonsi.site/img/Ukiyo-e/ukiyo-e-00008.jpg
+    top_img: https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/Ukiyo-e/ukiyo-e-00008.jpg
     aside: true
     path: movies
     limit:

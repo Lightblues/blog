@@ -4,7 +4,7 @@ aside: true
 date: 2021-10-31 02:21:50
 updated:
 description:
-top_img: https://cloud.easonsi.site/img/Ukiyo-e/ukiyo-e-00002.jpg
+top_img: https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/Ukiyo-e/ukiyo-e-00002.jpg
 ---
 
 {% note info simple %}
@@ -14,21 +14,21 @@ from [wiki](https://zh.wikipedia.org/wiki/%E5%86%A8%E5%B6%BD%E4%B8%89%E5%8D%81%E
 {% endnote %}
 
 {% gallery %}
-![](https://cloud.easonsi.site/img/Ukiyo-e/ukiyo-e-00001.jpg)
-![](https://cloud.easonsi.site/img/Ukiyo-e/ukiyo-e-00002.jpg)
-![](https://cloud.easonsi.site/img/Ukiyo-e/ukiyo-e-00003.jpg)
-![](https://cloud.easonsi.site/img/Ukiyo-e/ukiyo-e-00004.jpg)
-![](https://cloud.easonsi.site/img/Ukiyo-e/ukiyo-e-00005.jpg)
-![](https://cloud.easonsi.site/img/Ukiyo-e/ukiyo-e-00006.jpg)
-![](https://cloud.easonsi.site/img/Ukiyo-e/ukiyo-e-00007.jpg)
-![](https://cloud.easonsi.site/img/Ukiyo-e/ukiyo-e-00008.jpg)
-![](https://cloud.easonsi.site/img/Ukiyo-e/ukiyo-e-00009.jpg)
-![](https://cloud.easonsi.site/img/Ukiyo-e/ukiyo-e-00010.jpg)
-![](https://cloud.easonsi.site/img/Ukiyo-e/ukiyo-e-00011.jpg)
-![](https://cloud.easonsi.site/img/Ukiyo-e/ukiyo-e-00012.jpg)
-![](https://cloud.easonsi.site/img/Ukiyo-e/ukiyo-e-00013.jpg)
-![](https://cloud.easonsi.site/img/Ukiyo-e/ukiyo-e-00014.jpg)
-![](https://cloud.easonsi.site/img/Ukiyo-e/ukiyo-e-00015.jpg)
-![](https://cloud.easonsi.site/img/Ukiyo-e/ukiyo-e-00016.jpg)
-![](https://cloud.easonsi.site/img/Ukiyo-e/ukiyo-e-00017.jpg)
+![](https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/Ukiyo-e/ukiyo-e-00001.jpg)
+![](https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/Ukiyo-e/ukiyo-e-00002.jpg)
+![](https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/Ukiyo-e/ukiyo-e-00003.jpg)
+![](https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/Ukiyo-e/ukiyo-e-00004.jpg)
+![](https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/Ukiyo-e/ukiyo-e-00005.jpg)
+![](https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/Ukiyo-e/ukiyo-e-00006.jpg)
+![](https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/Ukiyo-e/ukiyo-e-00007.jpg)
+![](https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/Ukiyo-e/ukiyo-e-00008.jpg)
+![](https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/Ukiyo-e/ukiyo-e-00009.jpg)
+![](https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/Ukiyo-e/ukiyo-e-00010.jpg)
+![](https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/Ukiyo-e/ukiyo-e-00011.jpg)
+![](https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/Ukiyo-e/ukiyo-e-00012.jpg)
+![](https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/Ukiyo-e/ukiyo-e-00013.jpg)
+![](https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/Ukiyo-e/ukiyo-e-00014.jpg)
+![](https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/Ukiyo-e/ukiyo-e-00015.jpg)
+![](https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/Ukiyo-e/ukiyo-e-00016.jpg)
+![](https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/Ukiyo-e/ukiyo-e-00017.jpg)
 {% endgallery %}

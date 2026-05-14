@@ -125,11 +125,11 @@ katex:
 # --------------------------------------
 
 # Favicon（網站圖標）
-favicon: "https://cloud.easonsi.site/img/_meta/favicon.ico"
+favicon: "https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/_meta/favicon.ico"
 
 # Avatar (頭像)
 avatar:
-  img: "https://cloud.easonsi.site/img/_meta/avatar.jpg"
+  img: "https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/_meta/avatar.jpg"
   effect: false
 
 # Disable all banner image  不要显示顶部图
@@ -138,25 +138,25 @@ disable_top_img: false
 # The banner image of home page
 # 还可以设置为透明 transparent
 # 渐变色 'linear-gradient(20deg, #0062be, #925696, #cc426e, #fb0347)'
-index_img: https://cloud.easonsi.site/img/EVA/eva-00001.jpg
+index_img: https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/EVA/eva-00001.jpg
 
 # If the banner of page not setting, it will show the top_img
-default_top_img: https://cloud.easonsi.site/img/cosmos/cosmos-00004.jpg
+default_top_img: https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/cosmos/cosmos-00004.jpg
 
 # The banner image of archive page
-archive_img: https://cloud.easonsi.site/img/EVA/eva-00002.jpg
+archive_img: https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/EVA/eva-00002.jpg
 
 # If the banner of tag page not setting, it will show the top_img
 # note: tag page, not tags page (子標籤頁面的 top_img)
 # 上面设置的是tag页面默认顶图，然后下面可以指定不同页面的顶图
-tag_img: "https://cloud.easonsi.site/img/SamuraiChamploo/samurai-champloo-00010.jpg"
+tag_img: "https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/SamuraiChamploo/samurai-champloo-00010.jpg"
 tag_per_img:
   # 笔记: /img/SamuraiChamploo/samurai-champloo-1.jpg
   # MWeb: /img/SamuraiChamploo/samurai-champloo-2.jpg
 
 # If the banner of category page not setting, it will show the top_img
 # note: category page, not categories page (子分類頁面的 top_img)
-category_img: "https://cloud.easonsi.site/img/CowboyBepop/cowboy-bepop-00003.jpg"
+category_img: "https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/CowboyBepop/cowboy-bepop-00003.jpg"
 category_per_img:
 
 cover:
@@ -184,95 +184,95 @@ cover:
     # - /img/EVA/eva-00010.jpg
     # - /img/EVA/eva-00011.jpg
     # - /img/EVA/eva-00012.jpg
-    - https://cloud.easonsi.site/img/EVA/eva-00001.jpg
-    - https://cloud.easonsi.site/img/EVA/eva-00002.jpg
-    - https://cloud.easonsi.site/img/EVA/eva-00003.jpg
-    - https://cloud.easonsi.site/img/EVA/eva-00004.jpg
-    - https://cloud.easonsi.site/img/EVA/eva-00005.jpg
-    - https://cloud.easonsi.site/img/EVA/eva-00006.jpg
-    - https://cloud.easonsi.site/img/EVA/eva-00007.jpg
-    - https://cloud.easonsi.site/img/EVA/eva-00008.jpg
-    - https://cloud.easonsi.site/img/EVA/eva-00009.jpg
-    - https://cloud.easonsi.site/img/EVA/eva-00010.jpg
-    - https://cloud.easonsi.site/img/EVA/eva-00011.jpg
-    - https://cloud.easonsi.site/img/EVA/eva-00012.jpg
-    - https://cloud.easonsi.site/img/GhostBlade-WLOP/ghost-blade-00001.jpg
-    - https://cloud.easonsi.site/img/GhostBlade-WLOP/ghost-blade-00002.jpg
-    - https://cloud.easonsi.site/img/GhostBlade-WLOP/ghost-blade-00003.jpg
-    - https://cloud.easonsi.site/img/GhostBlade-WLOP/ghost-blade-00004.jpg
-    - https://cloud.easonsi.site/img/GhostBlade-WLOP/ghost-blade-00005.jpg
-    - https://cloud.easonsi.site/img/GhostBlade-WLOP/ghost-blade-00006.jpg
-    - https://cloud.easonsi.site/img/GhostBlade-WLOP/ghost-blade-00007.jpg
-    - https://cloud.easonsi.site/img/GhostBlade-WLOP/ghost-blade-00008.jpg
-    - https://cloud.easonsi.site/img/GhostBlade-WLOP/ghost-blade-00009.jpg
-    - https://cloud.easonsi.site/img/GhostBlade-WLOP/ghost-blade-00010.jpg
-    - https://cloud.easonsi.site/img/GhostBlade-WLOP/ghost-blade-00011.jpg
-    - https://cloud.easonsi.site/img/GhostBlade-WLOP/ghost-blade-00012.jpg
-    - https://cloud.easonsi.site/img/GhostBlade-WLOP/ghost-blade-00013.jpg
-    - https://cloud.easonsi.site/img/SamuraiChamploo/samurai-champloo-00001.jpg
-    - https://cloud.easonsi.site/img/SamuraiChamploo/samurai-champloo-00002.jpg
-    - https://cloud.easonsi.site/img/SamuraiChamploo/samurai-champloo-00003.jpg
-    - https://cloud.easonsi.site/img/SamuraiChamploo/samurai-champloo-00004.jpg
-    - https://cloud.easonsi.site/img/SamuraiChamploo/samurai-champloo-00005.jpg
-    - https://cloud.easonsi.site/img/SamuraiChamploo/samurai-champloo-00006.jpg
-    - https://cloud.easonsi.site/img/SamuraiChamploo/samurai-champloo-00007.jpg
-    - https://cloud.easonsi.site/img/SamuraiChamploo/samurai-champloo-00008.jpg
-    - https://cloud.easonsi.site/img/SamuraiChamploo/samurai-champloo-00009.jpg
-    - https://cloud.easonsi.site/img/SamuraiChamploo/samurai-champloo-00010.jpg
-    - https://cloud.easonsi.site/img/Ukiyo-e/ukiyo-e-00001.jpg
-    - https://cloud.easonsi.site/img/Ukiyo-e/ukiyo-e-00002.jpg
-    - https://cloud.easonsi.site/img/Ukiyo-e/ukiyo-e-00003.jpg
-    - https://cloud.easonsi.site/img/Ukiyo-e/ukiyo-e-00004.jpg
-    - https://cloud.easonsi.site/img/Ukiyo-e/ukiyo-e-00005.jpg
-    - https://cloud.easonsi.site/img/Ukiyo-e/ukiyo-e-00006.jpg
-    - https://cloud.easonsi.site/img/Ukiyo-e/ukiyo-e-00007.jpg
-    - https://cloud.easonsi.site/img/Ukiyo-e/ukiyo-e-00008.jpg
-    - https://cloud.easonsi.site/img/Ukiyo-e/ukiyo-e-00009.jpg
-    - https://cloud.easonsi.site/img/Ukiyo-e/ukiyo-e-00010.jpg
-    - https://cloud.easonsi.site/img/Ukiyo-e/ukiyo-e-00011.jpg
-    - https://cloud.easonsi.site/img/Ukiyo-e/ukiyo-e-00012.jpg
-    - https://cloud.easonsi.site/img/Ukiyo-e/ukiyo-e-00013.jpg
-    - https://cloud.easonsi.site/img/Ukiyo-e/ukiyo-e-00014.jpg
-    - https://cloud.easonsi.site/img/Ukiyo-e/ukiyo-e-00015.jpg
-    - https://cloud.easonsi.site/img/Ukiyo-e/ukiyo-e-00016.jpg
-    - https://cloud.easonsi.site/img/Ukiyo-e/ukiyo-e-00017.jpg
-    - https://cloud.easonsi.site/img/cosmos/cosmos-00001.jpg
-    - https://cloud.easonsi.site/img/cosmos/cosmos-00002.jpg
-    - https://cloud.easonsi.site/img/cosmos/cosmos-00003.jpg
-    - https://cloud.easonsi.site/img/cosmos/cosmos-00004.jpg
-    - https://cloud.easonsi.site/img/cosmos/cosmos-00005.jpg
-    - https://cloud.easonsi.site/img/cosmos/cosmos-00006.jpg
-    - https://cloud.easonsi.site/img/cosmos/cosmos-00007.jpg
-    - https://cloud.easonsi.site/img/cosmos/cosmos-00008.jpg
-    - https://cloud.easonsi.site/img/cosmos/cosmos-00009.jpg
-    - https://cloud.easonsi.site/img/cosmos/cosmos-00010.jpg
-    - https://cloud.easonsi.site/img/Fate/fate-00001.jpg
-    - https://cloud.easonsi.site/img/Fate/fate-00002.jpg
-    - https://cloud.easonsi.site/img/Fate/fate-00003.jpg
-    - https://cloud.easonsi.site/img/Fate/fate-00004.jpg
-    - https://cloud.easonsi.site/img/Fate/fate-00005.jpg
-    - https://cloud.easonsi.site/img/Fate/fate-00006.jpg
-    - https://cloud.easonsi.site/img/Fate/fate-00007.jpg
-    - https://cloud.easonsi.site/img/Fate/fate-00008.jpg
-    - https://cloud.easonsi.site/img/Fate/fate-00009.jpg
-    - https://cloud.easonsi.site/img/Fate/fate-00010.jpg
-    - https://cloud.easonsi.site/img/CowboyBepop/cowboy-bepop-00001.jpg
-    - https://cloud.easonsi.site/img/CowboyBepop/cowboy-bepop-00002.jpg
-    - https://cloud.easonsi.site/img/CowboyBepop/cowboy-bepop-00003.jpg
-    - https://cloud.easonsi.site/img/CowboyBepop/cowboy-bepop-00004.jpg
-    - https://cloud.easonsi.site/img/CowboyBepop/cowboy-bepop-00005.jpg
-    - https://cloud.easonsi.site/img/CowboyBepop/cowboy-bepop-00006.jpg
-    - https://cloud.easonsi.site/img/CowboyBepop/cowboy-bepop-00007.jpg
-    - https://cloud.easonsi.site/img/CowboyBepop/cowboy-bepop-00008.jpg
-    - https://cloud.easonsi.site/img/CowboyBepop/cowboy-bepop-00009.jpg
-    - https://cloud.easonsi.site/img/CowboyBepop/cowboy-bepop-00010.jpg
-    - https://cloud.easonsi.site/img/CowboyBepop/cowboy-bepop-00011.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/EVA/eva-00001.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/EVA/eva-00002.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/EVA/eva-00003.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/EVA/eva-00004.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/EVA/eva-00005.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/EVA/eva-00006.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/EVA/eva-00007.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/EVA/eva-00008.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/EVA/eva-00009.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/EVA/eva-00010.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/EVA/eva-00011.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/EVA/eva-00012.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/GhostBlade-WLOP/ghost-blade-00001.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/GhostBlade-WLOP/ghost-blade-00002.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/GhostBlade-WLOP/ghost-blade-00003.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/GhostBlade-WLOP/ghost-blade-00004.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/GhostBlade-WLOP/ghost-blade-00005.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/GhostBlade-WLOP/ghost-blade-00006.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/GhostBlade-WLOP/ghost-blade-00007.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/GhostBlade-WLOP/ghost-blade-00008.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/GhostBlade-WLOP/ghost-blade-00009.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/GhostBlade-WLOP/ghost-blade-00010.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/GhostBlade-WLOP/ghost-blade-00011.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/GhostBlade-WLOP/ghost-blade-00012.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/GhostBlade-WLOP/ghost-blade-00013.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/SamuraiChamploo/samurai-champloo-00001.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/SamuraiChamploo/samurai-champloo-00002.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/SamuraiChamploo/samurai-champloo-00003.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/SamuraiChamploo/samurai-champloo-00004.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/SamuraiChamploo/samurai-champloo-00005.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/SamuraiChamploo/samurai-champloo-00006.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/SamuraiChamploo/samurai-champloo-00007.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/SamuraiChamploo/samurai-champloo-00008.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/SamuraiChamploo/samurai-champloo-00009.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/SamuraiChamploo/samurai-champloo-00010.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/Ukiyo-e/ukiyo-e-00001.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/Ukiyo-e/ukiyo-e-00002.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/Ukiyo-e/ukiyo-e-00003.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/Ukiyo-e/ukiyo-e-00004.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/Ukiyo-e/ukiyo-e-00005.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/Ukiyo-e/ukiyo-e-00006.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/Ukiyo-e/ukiyo-e-00007.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/Ukiyo-e/ukiyo-e-00008.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/Ukiyo-e/ukiyo-e-00009.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/Ukiyo-e/ukiyo-e-00010.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/Ukiyo-e/ukiyo-e-00011.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/Ukiyo-e/ukiyo-e-00012.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/Ukiyo-e/ukiyo-e-00013.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/Ukiyo-e/ukiyo-e-00014.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/Ukiyo-e/ukiyo-e-00015.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/Ukiyo-e/ukiyo-e-00016.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/Ukiyo-e/ukiyo-e-00017.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/cosmos/cosmos-00001.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/cosmos/cosmos-00002.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/cosmos/cosmos-00003.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/cosmos/cosmos-00004.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/cosmos/cosmos-00005.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/cosmos/cosmos-00006.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/cosmos/cosmos-00007.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/cosmos/cosmos-00008.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/cosmos/cosmos-00009.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/cosmos/cosmos-00010.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/Fate/fate-00001.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/Fate/fate-00002.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/Fate/fate-00003.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/Fate/fate-00004.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/Fate/fate-00005.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/Fate/fate-00006.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/Fate/fate-00007.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/Fate/fate-00008.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/Fate/fate-00009.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/Fate/fate-00010.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/CowboyBepop/cowboy-bepop-00001.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/CowboyBepop/cowboy-bepop-00002.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/CowboyBepop/cowboy-bepop-00003.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/CowboyBepop/cowboy-bepop-00004.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/CowboyBepop/cowboy-bepop-00005.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/CowboyBepop/cowboy-bepop-00006.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/CowboyBepop/cowboy-bepop-00007.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/CowboyBepop/cowboy-bepop-00008.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/CowboyBepop/cowboy-bepop-00009.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/CowboyBepop/cowboy-bepop-00010.jpg
+    - https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/CowboyBepop/cowboy-bepop-00011.jpg
 
 
 # Replace Broken Images (替換無法顯示的圖片)
 error_img:
-  flink: https://cloud.easonsi.site/img/_meta/404_image.png
-  post_page: https://cloud.easonsi.site/img/_meta/404_image.png
+  flink: https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/_meta/404_image.png
+  post_page: https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/_meta/404_image.png
 
 # A simple 404 page
 error_404:
@@ -458,7 +458,7 @@ valine:
   appId: # leancloud application app id
   appKey: # leancloud application app key
   pageSize: 10 # comment list page size
-  avatar: https://cloud.easonsi.site/img/_meta/avatar.jpg
+  avatar: https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/_meta/avatar.jpg
   # monsterid # gravatar style https://valine.js.org/#/avatar
   lang: en # i18n: zh-CN/zh-TW/en/ja
   placeholder: Please leave your footprints # valine comment input placeholder (like: Please leave your footprints)

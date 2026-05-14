@@ -6,7 +6,7 @@ aside: true
 description:
 # layout: tags
 type: "tags"
-top_img: https://cloud.easonsi.site/img/SamuraiChamploo/samurai-champloo-00010.jpg
+top_img: https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/SamuraiChamploo/samurai-champloo-00010.jpg
 ---
 
 ## 标签？

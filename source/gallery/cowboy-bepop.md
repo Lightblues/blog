@@ -4,7 +4,7 @@ aside: true
 date: 2021-10-31 02:21:50
 updated:
 description:
-top_img: https://cloud.easonsi.site/img/CowboyBepop/cowboy-bepop-00001.jpg
+top_img: https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/CowboyBepop/cowboy-bepop-00001.jpg
 ---
 
 {% youtube 6Hj6hPqKiS4 %}
@@ -28,17 +28,17 @@ from 星际牛仔第二十六话 The Real Folk Blues(PART 2) Spike
 {% endnote %}
 
 {% gallery %}
-![](https://cloud.easonsi.site/img/CowboyBepop/cowboy-bepop-00001.jpg)
-![](https://cloud.easonsi.site/img/CowboyBepop/cowboy-bepop-00002.jpg)
-![](https://cloud.easonsi.site/img/CowboyBepop/cowboy-bepop-00003.jpg)
-![](https://cloud.easonsi.site/img/CowboyBepop/cowboy-bepop-00004.jpg)
-![](https://cloud.easonsi.site/img/CowboyBepop/cowboy-bepop-00005.jpg)
-![](https://cloud.easonsi.site/img/CowboyBepop/cowboy-bepop-00006.jpg)
-![](https://cloud.easonsi.site/img/CowboyBepop/cowboy-bepop-00007.jpg)
-![](https://cloud.easonsi.site/img/CowboyBepop/cowboy-bepop-00008.jpg)
-![](https://cloud.easonsi.site/img/CowboyBepop/cowboy-bepop-00009.jpg)
-![](https://cloud.easonsi.site/img/CowboyBepop/cowboy-bepop-00010.jpg)
-![](https://cloud.easonsi.site/img/CowboyBepop/cowboy-bepop-00011.jpg)
+![](https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/CowboyBepop/cowboy-bepop-00001.jpg)
+![](https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/CowboyBepop/cowboy-bepop-00002.jpg)
+![](https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/CowboyBepop/cowboy-bepop-00003.jpg)
+![](https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/CowboyBepop/cowboy-bepop-00004.jpg)
+![](https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/CowboyBepop/cowboy-bepop-00005.jpg)
+![](https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/CowboyBepop/cowboy-bepop-00006.jpg)
+![](https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/CowboyBepop/cowboy-bepop-00007.jpg)
+![](https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/CowboyBepop/cowboy-bepop-00008.jpg)
+![](https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/CowboyBepop/cowboy-bepop-00009.jpg)
+![](https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/CowboyBepop/cowboy-bepop-00010.jpg)
+![](https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/CowboyBepop/cowboy-bepop-00011.jpg)
 {% endgallery %}
 
 {% note success %}

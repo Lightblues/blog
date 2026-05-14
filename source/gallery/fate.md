@@ -4,7 +4,7 @@ aside: true
 date: 2021-10-31 05:02:34
 updated:
 description:
-top_img: https://cloud.easonsi.site/img/Fate/fate-00004.jpg
+top_img: https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/Fate/fate-00004.jpg
 ---
 
 {% note success simple %}
@@ -19,16 +19,16 @@ top_img: https://cloud.easonsi.site/img/Fate/fate-00004.jpg
 {% endnote %}
 
 {% gallery %}
-![](https://cloud.easonsi.site/img/Fate/fate-00001.jpg)
-![](https://cloud.easonsi.site/img/Fate/fate-00002.jpg)
-![](https://cloud.easonsi.site/img/Fate/fate-00003.jpg)
-![](https://cloud.easonsi.site/img/Fate/fate-00004.jpg)
-![](https://cloud.easonsi.site/img/Fate/fate-00005.jpg)
-![](https://cloud.easonsi.site/img/Fate/fate-00006.jpg)
-![](https://cloud.easonsi.site/img/Fate/fate-00007.jpg)
-![](https://cloud.easonsi.site/img/Fate/fate-00008.jpg)
-![](https://cloud.easonsi.site/img/Fate/fate-00009.jpg)
-![](https://cloud.easonsi.site/img/Fate/fate-00010.jpg)
+![](https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/Fate/fate-00001.jpg)
+![](https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/Fate/fate-00002.jpg)
+![](https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/Fate/fate-00003.jpg)
+![](https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/Fate/fate-00004.jpg)
+![](https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/Fate/fate-00005.jpg)
+![](https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/Fate/fate-00006.jpg)
+![](https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/Fate/fate-00007.jpg)
+![](https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/Fate/fate-00008.jpg)
+![](https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/Fate/fate-00009.jpg)
+![](https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/Fate/fate-00010.jpg)
 {% endgallery %}
 
 {% note success simple %}

@@ -2,7 +2,7 @@
 title: About
 date: 2021-10-30 08:06:01
 updated: 
-top_img: https://cloud.easonsi.site/img/_meta/about.jpg
+top_img: https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/_meta/about.jpg
 type: "about"
 ---
 

@@ -29,7 +29,7 @@ sticky:
 
 没有打理卫生的决心, 但能鸠占鹊巢还是向往整洁的环境的. 适度的强迫症或洁癖值得钦佩, 虽然对个人而言行动的决心抵不过身体的惰性. 
 
-![2022-08-26-22-59-11](https://cloud.easonsi.site/img/movies/movies-00001.png)
+![2022-08-26-22-59-11](https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/movies/movies-00001.png)
 <center>from 隐入尘烟</center>
 
 惰性人人有之, 据说还是生产力进步的原动力, 似乎还没那么糟糕. 如何借工具来填补惰性? 所谓科学方法论. 
