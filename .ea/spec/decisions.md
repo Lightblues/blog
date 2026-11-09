@@ -84,3 +84,14 @@ Needed to manage DNS records programmatically rather than through web console.
 **Consequences:**
 - Requires `tencentcloud-sdk-python-dnspod` installed (global base venv at `~/.venvs/base`)
 - Must set env vars before running scripts
+
+---
+
+## ADR-004: Restore movies-00001.png
+
+**Date:** 2026-11-09
+**Status:** Accepted
+
+**Context:** ADR-002 recorded `blog/movies/movies-00001.png` as missing from COS and accepted as lost. The file was still in `~/Projects/Blog/img/movies/` on tx-mbp-m1pro. The post already links `https://cdn.jsdelivr.net/gh/lightblues/assets@main/blog/movies/movies-00001.png`.
+
+**Decision:** Add the file back to `assets` (`65d486b`).
